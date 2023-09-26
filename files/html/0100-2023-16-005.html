@@ -1,0 +1,720 @@
+<html>
+<cdb>broida mspb</cdb>
+<doctype>Chapter 09: Performance Cases</doctype>
+<doctitle>Chapter 09: Performance Cases, Subchapter 01: Unacceptable Performance Cases, Section B: Overview of Performance Actions</doctitle>
+<htmltext><head>
+<style>
+body {
+-epub-hyphens:auto;
+-webkit-hyphens:auto;
+margin:1em;
+}
+a{
+text-decoration:none;
+}
+img{
+max-width:100%;
+vertical-align:middle;
+}
+h1.Ch-Head {
+font-family:"Arial", sans-serif;
+font-size:2.34em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+h1.Ch-Subhead {
+font-family:"Arial", sans-serif;
+font-size:2.17em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+border-bottom-style:double;
+padding-bottom:.2em;
+}
+p.Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Text-R {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-Rh {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-R2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+p.Body-Textl {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:-0.3em;
+margin-top:0.5em;
+text-align:left;
+text-indent:0em;
+}
+p.Body-Textc {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+h2.h2 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+margin-left:3em;
+text-align:left;
+text-indent:0em;
+}
+span.space{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-3em;
+}
+span.spacet{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+h3.h3 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:6em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h4.h4 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:8em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h5.h5 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:10em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h6.h6 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:12em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+div.box1{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2.5em;
+border-style:double;
+padding:0em;
+}
+div.box1a{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2em;
+border-style:double;
+padding:0em;
+}
+div.box1b{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 1.8em;
+border-style:double;
+padding:0em;
+}
+h1.csh {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+background-color:#E7E7E8;
+text-align:center;
+}
+div.box2{
+font-family:"Arial", sans-serif;
+margin:0.6em 1.5em 0em 1.5em;
+border:3px solid;
+padding:0em 0.3em 0em 0.3em;
+}
+h1.csh1 {
+font-family:"Arial", sans-serif;
+font-size:0.87em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+text-align:center;
+}
+ul.bull1{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.8em 0.3em 0.8em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull1p{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull12{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0.2em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.list{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 1.8em;
+padding:0em;
+text-align:left;
+}
+ul.listl{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 0.5em;
+padding:0em;
+text-align:left;
+}
+ul.listn{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+font-size:0.83em;
+margin:0em 0em 0.8em 0.5em;
+text-align:left;
+}
+li.listr2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 0em .7em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 2em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 4em;
+text-align:left;
+text-indent:-2.2em;
+padding:0.2em 0em 0em 0em;
+}
+li.listr2n{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.8em 0.1em .0em 0.2em;
+text-indent:-2.1em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2cn{
+padding-right:1em;
+}
+span.nl2cnb{
+padding-right:1.5em;
+}
+li.listr2b{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 0em -0.8em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2c{
+padding-right:2em;
+}
+p.listr3{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 0em .5em 0em;
+text-align:left;
+}
+li.nl2ca {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 0.2em;
+text-align:left;
+text-indent:0em;
+}
+li.nl2c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 2em;
+text-align:left;
+text-indent:0em;
+}
+span.nl2ca {
+font-family:"Arial", sans-serif;
+float:left;
+margin:0em 0em 0em -2em;
+}
+blockquote{
+font-family:"Arial", sans-serif;
+margin:0.5em 0em 0.5em 1.8em;
+}
+p.Block-Quote1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 3em;
+text-align:justify;
+}
+p.Block-Quote1s{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 1em 1.3em;
+text-align:justify;
+}
+p.Block-Quote2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 5em;
+text-align:justify;
+}
+p.Block-Quote3{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 7em;
+text-align:justify;
+}
+p.Block-Quote4{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 9em;
+text-align:justify;
+}
+p.Block-Quote5{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 11em;
+text-align:justify;
+}
+p.Block-Quote6{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 13em;
+text-align:justify;
+}
+p.b2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 4.5em;
+text-align:left;
+}
+p.Body-Text-1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:.5em;
+margin-top:.5em;
+text-align:left;
+text-indent:0em;
+}
+p.box-Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin:0.5em 0 0.5em 0;
+text-align:left;
+text-indent:0em;
+}
+.Italic{
+font-family:"Arial", sans-serif;
+font-style:italic;
+}
+p.C-P-box-body-text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C-P-box-body-text2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.2em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+padding:0.3em;
+text-indent:0em;
+}
+p.C-P-box-body-text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C1-P-box-Body-Text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em 0.2em 0.2em 0.7em;
+text-align:left;
+text-indent:0em;
+}
+p.td2b{
+font-family:"Arial", sans-serif;
+font-size:0.92em;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+p.td2b1{
+font-family:"Arial", sans-serif;
+font-size:1.2em !important;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+span.white{
+font-family:"Arial", sans-serif;
+color:white;
+}
+.img{
+font-family:"Arial", sans-serif;
+margin:0em 0.4em 0em 1em;
+text-indent:0em;
+}
+td.practice-para, p.practice-para{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+text-indent:0em;
+}
+td.practice-parats{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+padding:0.5em 0em 0em 1.5em;
+text-indent:0em;
+}
+td.practice-paratd{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+text-indent:0em;
+}
+td.practice-paratd1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+border-right:2px solid;
+text-indent:0em;
+}
+ p.practice-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+ p.practice-para2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+div.black{
+font-family:"Arial", sans-serif;
+background-color:#000000;
+color:#FFFFFF;
+padding:.2em 1em .2em 1em;
+}
+.practice-para-h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 0em 0em 0.8em;
+text-align:center;
+text-indent:0em;
+}
+.hang{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 6em;
+text-align:left;
+}
+.list-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 2.7em;
+text-align:left;
+}
+.list-para2{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 3.7em;
+text-align:left;
+}
+small.ch{
+font-family:"Arial", sans-serif;
+font-size:0.75em;
+}
+small.cs{
+font-family:"Arial", sans-serif;
+font-size:0.65em;
+}
+span.pad{
+padding-right:2em;
+}
+table.table{
+border-collapse:collapse;
+max-width:100%;
+margin:0em 1.5em 0em 1.5em;
+}
+table.table1{
+border-collapse:collapse;
+max-width:100%;
+margin:-1em 1em 0em 1em;
+margin-left:auto;
+margin-right:auto;
+}
+div.practice{
+font-family:"Arial", sans-serif;
+font-size:1.25em;
+margin:0em .5em 0 0;
+text-align:center;
+padding:.5em;
+text-indent:0em;
+background-color:#E7E7E8;
+}
+p.list {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.list2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:6.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list2{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.Body-Address {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:0.25em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Address-h {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:1em;
+text-align:justify;
+text-indent:0em;
+}
+table.table
+{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+margin-bottom: 1.5em;
+margin-top:1.5em;
+text-align:left;
+text-indent:0em;
+font-size:0.95em;
+border-collapse:collapse;
+width:100%;
+border:1px solid #000;
+}
+table.table tbody td.td{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+font-size:1em;
+font-weight:normal;
+margin-bottom:0em;
+margin-top:0em;
+padding:0.5em;
+text-indent:0em;
+vertical-align:top;
+color:#000;
+text-align:left;
+font-weight:normal;
+border:1px solid #000;
+}
+table.table tbody td.td p.list {
+font-family:"Arial", sans-serif;
+font-size:1em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+table.table tbody td.td span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+span.small
+{
+font-size:0.75em;
+}
+span.blue
+{
+color:#0000FF;
+}
+span.Italic
+{
+font-family:"Arial", sans-serif;font-style:italic;}
+span.BoldItalic
+{
+font-family:"Arial", sans-serif;font-style:italic;font-weight:bold;}
+span.Bold
+{font-family:"Arial", sans-serif;font-weight:bold;}
+</style>
+</head>
+<body>
+<section>
+<h3 class="h3" id="sec9-5"><span class="space">B.</span> OVERVIEW OF PERFORMANCE ACTIONS</h3>
+<p class="Body-Text">The Board's early leading decision on performance actions, <span class="Italic">Wells v. Harris</span>, 1 MSPR 208, 230, 1 MSPB 199 (1979), considered the congressional debate over performance appraisal provisions of the Reform Act:</p>
+<p class="Block-Quote1">The legislative history shows that Congress intended to provide in &#x00A7; 4302 a more meaningful replacement for the former performance rating systems which were regarded as useless or ineffective; to require a single interrelated framework for performance appraisals under &#x00A7; 4302 systems in which those appraisals would be the basis for multiple personnel actions including promotions, pay increases and awards as well as adverse actions; and to require that &#x00A7; 4303 actions be based on the results of such appraisal systems. It also shows that Congress was aware of inadequacies in the state-of-the-art for appraising employee performance and the consequent potential for arbitrariness, and sought to protect against those risks by requiring objective performance criteria and careful review by OPM of each appraisal system.</p>
+<p class="Body-Text"><span class="Italic">Wells</span> determined that actions against employees that are based upon unacceptable performance, decided on the basis of substantial evidence and pursued through procedures identified at 5 USC 4303, may be taken only if an OPM-approved appraisal system is in effect and developed under 5 USC 4302. <span class="Italic">Wells</span> explained that because of the lesser evidentiary burden of substantial evidence in &#x00A7; 4303 actions, performance standards and critical elements should be established under circumstances providing adequate safeguards for employees. Congressional concern for these safeguards was apparent in the requirement of &#x00A7; 4302(c)(1) that performance standards will, to the maximum extent feasible, permit accurate evaluation of job performance on the basis of objective criteria. In fact, few safeguards are provided. OPM does not review the standards. Its review is to ensure the adequacy of agency regulations defining how agency managers will establish the standards<span class="Italic">. See</span> <span class="Italic">Siegelman v. DHUD</span>, 14 MSPR 326, 330 n.6 (1983). <span class="Italic">Wells</span> decided that performance standards need not be centrally established by agencies. Performance standards need not even be the same for employees in a given position at a particular location.</p>
+<p class="Body-Text">An agency may remove an employee at any time during a performance appraisal cycle when the employee's performance in one or more critical elements becomes unacceptable after giving her a reasonable time to demonstrate acceptable performance before proposing removal. <span class="Italic">Poe v. USDA</span>, 45 MSPR 678, 684 (1990). The agency may attempt to prove that performance was unacceptable in more than one element, but the law requires proof of poor performance in only one element. If the agency removes an employee for unacceptable performance in three elements, it will ordinarily prevail if it proves its case as to one. But the agency may impose upon itself burdens that exceed statutory requirements. In <span class="Italic">McKenzie v. EEOC</span>, 38 MSPR 380, 382-83 (1988), unacceptable performance was defined so that an employee could be rated as unacceptable only if he failed to meet more than one critical element. Without offering more than a conclusory analysis of how the agency's definition of unacceptable performance complied with OPM regulations, the Board implicitly approved the scheme and remanded the case to the region to analyze the appellant's performance on more than the one element reviewed in the initial decision. The Board reaffirmed that if the agency's performance appraisal system precludes removal unless the employee is unsatisfactory in more than one critical element, that system will be upheld and unacceptable performance in only one element will not sustain removal. <span class="Italic">Meyers v. EEOC</span>, 45 MSPR 488, 494 (1990) (citing <span class="Italic">McKenzie v. EEOC</span>, 38 MSPR 380, 382-83 (1988)); <span class="Italic">cf.</span> <span class="Italic">Williams v. USPS</span> (Fed. Cir. 1996 NP No. 96-3307) (<span class="Italic">Meyers</span> and <span class="Italic">McKenzie</span> present the exception, not the rule: in <span class="Italic">Meyers</span> and <span class="Italic">McKenzie</span> the appellants worked for an agency whose performance appraisal plan required consideration of more than one critical element before imposing a demotion). Critical elements may include subelements, and the subelements are treated by the Board as the equivalent of critical elements, <span class="italic">Brookins v. Dept. of Interior</span>, DE-0432-18-0359-I-1 (NP 1/19/2023):</p>
+<p class="Block-Quote1">...The Board has long held, however, that a critical element may include subelements and that the incumbent of a position for which a compound standard has been established may be required to perform acceptably with respect to each of those subelements. <span class="italic">Lee</span>, 115 M.S.P.R. 533, &#x00B6; 31; <span class="italic">Shuman v. Department of the Treasury</span>, 23 M.S.P.R. 620, 627-28 (1984). Here, the subelements/components set forth under critical elements 1 and 2 contribute to the clarity of the appellant's performance standards by describing the quality, quantity, timeliness, and manner of performance required to be appraised at a particular level of performance and are consistent with his job description. <span class="italic">See Lee</span>, 115 M.S.P.R. 533, &#x00B6; 31; <span class="italic">Shuman</span>, 23 M.S.P.R. at 627-28; 5 C.F.R. &#x00A7; 430.203 (defining "performance standard"). Thus, the fact that each broadly labeled critical element contained component parts does not render the performance standards invalid.</p>
+<p class="Body-Text">A prerequisite to a &#x00A7; 4301(b)(1)(A) unacceptable performance notice under <span class="Italic">Wells</span> is a prior opportunity to demonstrate acceptable performance under established performance standards and critical elements that are communicated to the employee. <span class="Italic">See</span> <span class="Italic">Kopp v. Dept. of Air Force</span>, 33 MSPR 624, 628 (1987); <span class="Italic">Louis v. DHHS</span>, 25 MSPR 547 (1985) ("An agency's failure either to promulgate valid performance standards or to afford an employee an opportunity to improve violates a substantive right of the employee. It follows that the agency's obligation to adequately communicate those standards is also a substantive right."). In a performance case, proof of effective communication of performance standards represents an element of the agency's case to be established by substantial evidence. <span class="Italic">Louis</span>, <span class="Italic">supra</span>. If an appellant contends that an agency violated this requirement, the agency must prove by substantial evidence that the appellant was made aware of and understood the performance standards and critical elements in question at the beginning of the appraisal period forming the basis of the action. <span class="Italic">Weirauch v. Dept. of Army</span>, 26 MSPR 53, 56 (1985).</p>
+<p class="Body-Text">It is the agency's burden to prove that the employee failed to demonstrate acceptable performance against existing performance standards. Some performance standards have multiple levels. There may be standards setting levels for outstanding, fully satisfactory, and marginal performance. If the employer demonstrates that the employee is performing marginally but not fully satisfactorily, the employee cannot be removed. The performance is not unacceptable; marginal performance warrants only denial of a step increase. <span class="Italic">Hazzard v. Dept. of Navy</span>, 24 MSPR 593 (1984); <span class="Italic">cf</span>. <span class="Italic">Fisher v. VA</span>, 456 Fed. Appx. 893, 896 (Fed. Cir. 2011 NP) ("an employee who is placed on a PIP and performs satisfactorily during the PIP may not be penalized for unacceptable performance occurring prior to the PIP, <span class="Italic">see</span> <span class="Italic">James v. Veterans Admin.</span>, 27 M.S.P.R. 124, 127 (1985)."); <span class="Italic">see</span> <span class="Italic">Mallory v. USDA,</span> DC-0432-13-0347-I-2 (NP 6/8/2015) ("Agency performance appraisal systems may include between two and five summary rating levels. 5 C.F.R. &#x00A7; 430.208(d). Under any performance appraisal system, the lowest rating level is unacceptable, which is the only rating that will support removal under chapter 43. <span class="Italic">Van Prichard v. Department of Defense</span>, 117 M.S.P.R. 88, &#x00B6; 14 (2011), <span class="Italic">aff'd</span>, 484 F. App'x 489 (Fed. Cir. 2012). Under certain performance appraisal systems, performance of a critical element may fall between fully successful and unacceptable. <span class="Italic">Id.</span>, &#x00B6;&#x00B6; 14-15; 5 C.F.R. &#x00A7;&#x00A7; 430.207(c), 430.208(d). When there is such an intermediary rating level, an appellant could reach a marginal level of performance without falling to the unacceptable level of performance that would support removal under chapter 43. <span class="Italic">Van Prichard</span>, 117 M.S.P.R. 88, &#x00B6; 15."). If the performance standard for marginal performance does not state the limit of unacceptable performance before performance is considered unacceptable, it is sufficient if in the warning notice the agency specifically tells the employee how he can raise his performance to an acceptable level and provides an opportunity for him to do so. <span class="Italic">Diaz v. Dept. of Navy</span>, 25 MSPR 265, 267 (1984).</p>
+<p class="Body-Text">The distinction between marginal and unacceptable performance can be used in the employee's defense. If a marginal performer was denied a step increase, the agency may later issue a warning of unacceptable performance and a letter stating what is necessary to improve performance. If a removal action follows, it may be difficult for the agency proposing or deciding official to state how the employee's performance declined from marginal to unacceptable over the period of months that elapsed between the denial of the step increase and the issuance of the warning letter. If the employee manages to obtain admissions from managers or supervisors that the employee's poor but marginal performance continued from the time the step increase was denied through the time he was removed, the employee should win. The agency will have admitted that the employee's performance was not unacceptable.</p>
+<p class="Body-Text">The agency is ultimately responsible for proving each element of a performance case, <span class="Italic">Nafus v. Dept. of Army</span>, 57 MSPR 386, 400 (1993):</p>
+<p class="Block-Quote1"><span id="Page_2876"></span>In a performance-based action taken under 5 USC Chapter 43, the agency must prove all of the elements of its case, not just the unacceptability of the appellant's performance, by substantial evidence. This is so because the rights afforded appellants under Chapter 43 are substantive, not procedural<span class="Italic">. See</span>, <span class="Italic">e.g.</span>, <span class="Italic">Griffin v. Department of the Army</span>, 23 MSPR 657 (1984), <span class="Italic">reconsideration denied sub nom. Notham v. Department of the Army</span>, 29 MSPR 190 (1985); <span class="Italic">Eibel v. Department of the Navy</span>, 857 F.2d 1439 (Fed. Cir. 1988); <span class="Italic">Weirauch v. Department of the Army</span>, 782 F.2d 1560 (Fed. Cir. 1986); <span class="Italic">Sandland v. General Services Administration</span>, 23 MSPR 583, 587 (1984). Thus, the Board will not sustain an agency action taken under Chapter 43, even if the agency proves that the appellant's performance was unacceptable, if the agency does not prove the other elements of a Chapter 43 action, including that the appellant was given a reasonable opportunity to improve his performance<span class="Italic">. See Sandland</span>, 23 MSPR at 587; <span class="Italic">see also Thompson v. Farm Credit Administration</span>, 51 MSPR 569, 578-80 (1991).</p>
+<p class="Body-Text">But the agency need only prove unacceptable performance during the PIP in one critical element, <span class="Italic">Davis v. SSA,</span> SF-0432-12-0763-M-1 n.13 (NP 5/3/2016):</p>
+<p class="Block-Quote1">We acknowledge that, as the appellant argues on review, many of the examples cited by the agency in support of the appellant's unacceptable performance in the critical element of participation are also cited in support of her unacceptable performance in the critical elements of demonstrates job knowledge and achieves business results. However, to support its removal under chapter 43, the agency need only prove the appellant's performance was unacceptable in a single critical element. 5 U.S.C. &#x00A7;&#x00A7; 4301(3), 4303(a); <span class="Italic">Towne v. Department of the Air Force</span>, 120 M.S.P.R. 239, &#x00B6; 6 (2013); <span class="Italic">Thompson v. Department of the Navy</span>, 89 M.S.P.R. 188, &#x00B6; 5 (2001). Because we find that the agency proved that the appellant's performance was unacceptable in the critical elements of demonstrates job knowledge and achieves business results, we need not address whether the agency proved that her performance was unacceptable in the critical element of participation via independent evidence or whether instances of poor performance can be used to find an employee's performance unacceptable under more than one critical element. <span class="Italic">See Towne</span>, 120 M.S.P.R. 239, &#x00B6; 29 n.12.</p>
+<p class="Body-Text">As to defenses raised in performance appeals, care must be taken to give consideration to the Board's harmful error rule [discussed in Chapter 11, "<a href="0100-2023-18-005.html#sec11-6">Harmful Error Applied</a>"] . Analysis begins with the <span class="Italic">Parker</span> decision, treated in the harmful error discussion. Because the substantial evidence test allows an unacceptable performance action to be sustained on the basis of very little evidence, procedural matters assume greater importance than they otherwise might in an action under Chapter 75. Some errors in unacceptable performance cases will render the action void, contrary to law. Examples may include a Chapter 43 action brought without an OPM-approved appraisal system. Board decisions do not readily distinguish between procedural error that may or may not qualify as harmful error and those failures to abide by Chapter 43 statutory and regulatory provisions that render an action void as not in accordance with the law without regard to the harmful error test. The Board noted in <span class="Italic">Alford v. DHEW</span>, 1 MSPR 317, 319 n.*, 1 MSPB 305 (1980), that procedural or operational defects in the performance appraisal system resulting in harm to appellants in subsequent &#x00A7; 4303 actions may be raised as an issue in a defense under &#x00A7; 7701(c)(2) (encompassing the requirement that the Board set aside actions that involve harmful error, that are based on prohibited personnel practices, or that are not in accordance with law). In <span class="Italic">Alford</span> the appellants were concerned that the agency had not solicited their input into their performance standards, an issue not directly addressed by the Board's decision determining the appeal to be premature. Although there are procedural issues in performance actions that may be governed by the harmful error rule, the rule will not be applied to improper performance standards<span class="Italic">. See</span> <span class="Italic">Evans v. Dept. of Treasury</span>, 24 MSPR 571, 577 n.10 (1984) (citing <span class="Italic">Callaway</span>, 23 MSPR 592, 597 n.6 (1984)). [Refer to Chapter 6, "<a href="0100-2023-13-158.html#sec6-157">Senior Executive Service</a>," for performance-based actions against members of the Senior Executive Service.] OPM publishes guidance on performance management at <a href="https://www.opm.gov/policy-data-oversight/performance-management">https://www.opm.gov/policy-data-oversight/performance-management</a>.</p>
+</section>
+</body>
+</htmltext>
+</html>

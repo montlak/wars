@@ -1,0 +1,721 @@
+<html>
+<cdb>broida mspb</cdb>
+<doctype>Chapter 09: Performance Cases</doctype>
+<doctitle>Chapter 09: Performance Cases, Subchapter 01: Unacceptable Performance Cases, Section I: Preclusion of Mitigation</doctitle>
+<htmltext><head>
+<style>
+body {
+-epub-hyphens:auto;
+-webkit-hyphens:auto;
+margin:1em;
+}
+a{
+text-decoration:none;
+}
+img{
+max-width:100%;
+vertical-align:middle;
+}
+h1.Ch-Head {
+font-family:"Arial", sans-serif;
+font-size:2.34em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+h1.Ch-Subhead {
+font-family:"Arial", sans-serif;
+font-size:2.17em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+border-bottom-style:double;
+padding-bottom:.2em;
+}
+p.Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Text-R {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-Rh {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-R2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+p.Body-Textl {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:-0.3em;
+margin-top:0.5em;
+text-align:left;
+text-indent:0em;
+}
+p.Body-Textc {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+h2.h2 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+margin-left:3em;
+text-align:left;
+text-indent:0em;
+}
+span.space{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-3em;
+}
+span.spacet{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+h3.h3 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:6em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h4.h4 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:8em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h5.h5 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:10em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h6.h6 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:12em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+div.box1{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2.5em;
+border-style:double;
+padding:0em;
+}
+div.box1a{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2em;
+border-style:double;
+padding:0em;
+}
+div.box1b{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 1.8em;
+border-style:double;
+padding:0em;
+}
+h1.csh {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+background-color:#E7E7E8;
+text-align:center;
+}
+div.box2{
+font-family:"Arial", sans-serif;
+margin:0.6em 1.5em 0em 1.5em;
+border:3px solid;
+padding:0em 0.3em 0em 0.3em;
+}
+h1.csh1 {
+font-family:"Arial", sans-serif;
+font-size:0.87em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+text-align:center;
+}
+ul.bull1{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.8em 0.3em 0.8em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull1p{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull12{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0.2em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.list{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 1.8em;
+padding:0em;
+text-align:left;
+}
+ul.listl{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 0.5em;
+padding:0em;
+text-align:left;
+}
+ul.listn{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+font-size:0.83em;
+margin:0em 0em 0.8em 0.5em;
+text-align:left;
+}
+li.listr2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 0em .7em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 2em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 4em;
+text-align:left;
+text-indent:-2.2em;
+padding:0.2em 0em 0em 0em;
+}
+li.listr2n{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.8em 0.1em .0em 0.2em;
+text-indent:-2.1em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2cn{
+padding-right:1em;
+}
+span.nl2cnb{
+padding-right:1.5em;
+}
+li.listr2b{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 0em -0.8em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2c{
+padding-right:2em;
+}
+p.listr3{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 0em .5em 0em;
+text-align:left;
+}
+li.nl2ca {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 0.2em;
+text-align:left;
+text-indent:0em;
+}
+li.nl2c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 2em;
+text-align:left;
+text-indent:0em;
+}
+span.nl2ca {
+font-family:"Arial", sans-serif;
+float:left;
+margin:0em 0em 0em -2em;
+}
+blockquote{
+font-family:"Arial", sans-serif;
+margin:0.5em 0em 0.5em 1.8em;
+}
+p.Block-Quote1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 3em;
+text-align:justify;
+}
+p.Block-Quote1s{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 1em 1.3em;
+text-align:justify;
+}
+p.Block-Quote2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 5em;
+text-align:justify;
+}
+p.Block-Quote3{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 7em;
+text-align:justify;
+}
+p.Block-Quote4{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 9em;
+text-align:justify;
+}
+p.Block-Quote5{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 11em;
+text-align:justify;
+}
+p.Block-Quote6{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 13em;
+text-align:justify;
+}
+p.b2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 4.5em;
+text-align:left;
+}
+p.Body-Text-1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:.5em;
+margin-top:.5em;
+text-align:left;
+text-indent:0em;
+}
+p.box-Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin:0.5em 0 0.5em 0;
+text-align:left;
+text-indent:0em;
+}
+.Italic{
+font-family:"Arial", sans-serif;
+font-style:italic;
+}
+p.C-P-box-body-text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C-P-box-body-text2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.2em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+padding:0.3em;
+text-indent:0em;
+}
+p.C-P-box-body-text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C1-P-box-Body-Text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em 0.2em 0.2em 0.7em;
+text-align:left;
+text-indent:0em;
+}
+p.td2b{
+font-family:"Arial", sans-serif;
+font-size:0.92em;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+p.td2b1{
+font-family:"Arial", sans-serif;
+font-size:1.2em !important;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+span.white{
+font-family:"Arial", sans-serif;
+color:white;
+}
+.img{
+font-family:"Arial", sans-serif;
+margin:0em 0.4em 0em 1em;
+text-indent:0em;
+}
+td.practice-para, p.practice-para{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+text-indent:0em;
+}
+td.practice-parats{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+padding:0.5em 0em 0em 1.5em;
+text-indent:0em;
+}
+td.practice-paratd{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+text-indent:0em;
+}
+td.practice-paratd1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+border-right:2px solid;
+text-indent:0em;
+}
+ p.practice-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+ p.practice-para2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+div.black{
+font-family:"Arial", sans-serif;
+background-color:#000000;
+color:#FFFFFF;
+padding:.2em 1em .2em 1em;
+}
+.practice-para-h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 0em 0em 0.8em;
+text-align:center;
+text-indent:0em;
+}
+.hang{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 6em;
+text-align:left;
+}
+.list-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 2.7em;
+text-align:left;
+}
+.list-para2{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 3.7em;
+text-align:left;
+}
+small.ch{
+font-family:"Arial", sans-serif;
+font-size:0.75em;
+}
+small.cs{
+font-family:"Arial", sans-serif;
+font-size:0.65em;
+}
+span.pad{
+padding-right:2em;
+}
+table.table{
+border-collapse:collapse;
+max-width:100%;
+margin:0em 1.5em 0em 1.5em;
+}
+table.table1{
+border-collapse:collapse;
+max-width:100%;
+margin:-1em 1em 0em 1em;
+margin-left:auto;
+margin-right:auto;
+}
+div.practice{
+font-family:"Arial", sans-serif;
+font-size:1.25em;
+margin:0em .5em 0 0;
+text-align:center;
+padding:.5em;
+text-indent:0em;
+background-color:#E7E7E8;
+}
+p.list {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.list2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:6.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list2{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.Body-Address {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:0.25em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Address-h {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:1em;
+text-align:justify;
+text-indent:0em;
+}
+table.table
+{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+margin-bottom: 1.5em;
+margin-top:1.5em;
+text-align:left;
+text-indent:0em;
+font-size:0.95em;
+border-collapse:collapse;
+width:100%;
+border:1px solid #000;
+}
+table.table tbody td.td{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+font-size:1em;
+font-weight:normal;
+margin-bottom:0em;
+margin-top:0em;
+padding:0.5em;
+text-indent:0em;
+vertical-align:top;
+color:#000;
+text-align:left;
+font-weight:normal;
+border:1px solid #000;
+}
+table.table tbody td.td p.list {
+font-family:"Arial", sans-serif;
+font-size:1em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+table.table tbody td.td span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+span.small
+{
+font-size:0.75em;
+}
+span.blue
+{
+color:#0000FF;
+}
+span.Italic
+{
+font-family:"Arial", sans-serif;font-style:italic;}
+span.BoldItalic
+{
+font-family:"Arial", sans-serif;font-style:italic;font-weight:bold;}
+span.Bold
+{font-family:"Arial", sans-serif;font-weight:bold;}
+</style>
+</head>
+<body>
+<section>
+<h3 class="h3" id="sec9-102"><span class="space">I.</span> PRECLUSION OF MITIGATION</h3>
+<p class="Body-Text"><span class="Italic">Lisiecki v. Fed. Home Loan Bank Bd.</span>, 23 MSPR 633 (1984), <span class="Italic">aff'd</span>, <span class="Italic">Lisiecki v. MSPB</span>, 769 F.2d 1558 (Fed. Cir. 1985), <span class="Italic">post,</span> <span class="Italic">cert.</span> <span class="Italic">denied</span>, 106 S. Ct. 1514 (1986), decided that the Board lacks authority to review or modify the agency's choice of removal or demotion in a Chapter 43 action. The Board considered the congressional purpose in the enactment of the performance appraisal provisions of the Reform Act: to make it easier for agencies to remove employees whose performance was unacceptable. The Board justified the result by reasoning that because Chapter 75 requires there to be a linkage between an adverse action and service efficiency, and because no such statutory requirement is inherent in Chapter 43 actions, mitigation--a function of the Board's need to review the degree of service efficiency enhanced by a particular penalty--is not applicable to Chapter 43 actions.</p>
+<p class="Body-Text">The <span class="Italic">Lisiecki</span> opinion produced a dissent from Board Vice-Chair Maria Johnson, who would have permitted modification of penalties if an agency clearly abused its discretion, a standard of review less rigorous, in her opinion, than the <span class="Italic">Douglas</span> standard of review involving a determination as to whether a penalty is unreasonable. She acknowledged that the legislative history was silent on mitigation of Chapter 43 penalties, but argued that there was no sound reason in administrative law to "bifurcate the Board's review of the merits of the agency's charges from the resulting sanction." It was her conclusion that the Board had inherent authority under the CSRA to modify a penalty.</p>
+<p class="Body-Text"><span class="Italic">Lisiecki</span> was affirmed by the Federal Circuit. <span class="Italic">Lisiecki v. MSPB</span>, 769 F.2d 1558, 1564, 1566 (Fed. Cir. 1985), observed that the Reform Act was intended to reform preexisting law by facilitating removal of poor performers. Chapter 43 was enacted to simplify dismissal procedures; Chapter 43 was distinct from Chapter 75, and the protections of the latter did not extend fully to the former. Then the court turned to the issue:</p>
+<p class="Block-Quote1">Chapters 43 and 75 are silent on the subject of mitigation. It is argued, therefore, that it is inconsistent for the board to have found that Congress silently approved of board mitigation of penalties in chapter 75 actions while silently disapproving them under chapter 43. This is a specious argument when the legislative history is considered. That history instructs us that prior standards under chapter 75 and prior case law developed thereunder do not apply to the new chapter 43, that the latter's purposes are new and different, and that the deference due agency actions under the new chapter should mean fewer board reversals and less vigorous court review.</p>
+<p class="Block-Quote1">Chapter 43 gives to the agency discretion to select one of only two penalties, demotion or removal, for unacceptable employee performance. That discretion is not unfettered. It is measured by the mandated performance appraisal system,...the requirement that substantial evidence support agency action,...and due process procedural <span id="Page_2974"></span>protections....&#8197;These limitations also mark the boundaries of board review. Why should this not be so? What institutional competence does the board or the court have to tell the hundreds of government agencies whether any of their approximately 3 million employees are performing acceptably? The legislative history speaks clearly of the deference due agency actions in this area in order to expedite the purposes of chapter 43 for the removal of poor performers with a minimum of red tape in order to correct the historic evils in personnel practice so well articulated by congressional reports....</p>
+<p class="Block-Quote1">...</p>
+<p class="Block-Quote1">It is important not to ignore the vital distinctions between the relevant chapters of title 5. In chapter 43 the basic issue to be decided is whether the employee has continued to perform unacceptably in a critical job element after being given an opportunity to improve. If he has failed, he can be demoted or removed by his agency. The action taken is remedial. The congressional purposes behind this straight-forward procedure have been discussed. Substantial evidence will support the agency action. Under chapter 75, on the other hand, the agency must prove by a "preponderance of the evidence" that the employee committed the misdeeds with which he is charged, that imposition of discipline will promote the "efficiency of the service," and that the penalty selected is reasonable. Penalties here are of a punitive nature when imposed for misconduct. The difficulties of proof as required under chapter 75 are manifest and Congress was highly motivated to find another, better way to deal with unacceptable performance cases; hence chapter 43....</p>
+<p class="Block-Quote1">The conclusion in <span class="Italic">Douglas</span> that the MSPB could mitigate penalties assessed under chapter 75 was based on considerations not anywhere present under chapter 43....&#8197;(1) the fact that the Board's predecessor agency, the Civil Service Commission, had mitigated penalties in chapter 75 actions and that this authority was inherited by the board by virtue of Reorganization Plan No. 2 of 1978 at a time when chapter 43 did not exist; (2) the board's conclusion that the continued exercise of such authority under the subsequent Reform Act was not inconsistent with the statutory terms of chapter 75 or its legislative history; and (3) the historic relationship of the penalty to the efficiency of the service standard in chapter 75 actions....</p>
+<p class="Block-Quote1">We...reject the appeal to return to the old system Congress sought to replace with the new chapter 43.</p>
+<p class="Block-Quote1">Management best knows its needs and the potential of its employees to further an agency's statutory mission. To permit the MSPB to mitigate demotion or removal would vest it with management prerogatives not intended. Worse, it would permit the board to require the agency to retain an incompetent worker in situations where it proposed removal....</p>
+<p class="Body-Text"><span class="Italic">Dobson v. Dept. of Navy</span>, 283 Fed. Appx. 818, 823 (Fed. Cir. 2008 NP), demonstrated the lack of relevance of mitigating factors in a performance-based removal appeal:</p>
+<p class="Block-Quote1">Mr. Dobson further claims that the administrative judge failed to consider various factual allegations. Mr. Dobson claims that the Board did not consider that he had more than "30 years of excellence in government and military service" and that "all was well" as of his November 2005 midyear review. The Board provided a detailed analysis of why the Navy's removal of Mr. Dobson was justified based on documented performance deficiencies during his 60-day evaluation period. Although Mr. Dobson may have performed at a satisfactory level during most of his career, the Navy was concerned that his performance had deteriorated. Under the rules applicable to performance improvement plans, only Mr. Dobson's performance during the 60-day evaluation period was relevant to the Board's analysis and decision.</p>
+<p class="Body-Text">Agency consideration of mitigating factors in a Chapter 43 case is not, of itself, harmful error. <span class="Italic">See</span> <span class="Italic">Worthen v. VA,</span> SF-0432-14-0539-I-1 (NP 6/26/2015) (referencing the findings of the AJ: "She found that, although the factors enumerated in <span class="Italic">Douglas v. Veterans Administration</span>, 5 M.S.P.R. 280, 306 (1981), are not applicable in a removal for unacceptable performance taken under chapter 43, the appellant failed to show that he was harmed by the deciding official's consideration of the <span class="Italic">Douglas</span> factors in deciding to remove him<span class="Italic">.</span>"). The Board upholds an agency regulation calling for the agency to make efforts to reassign an employee, or to consider demoting the employee if he cannot be reassigned, rather than removing him for unacceptable performance. The test is not whether the appellant is reassigned, but whether the agency makes good faith efforts to achieve that result. <span class="Italic">See</span> <span class="Italic">Robinson v. Dept. of Army</span>, 50 MSPR 412, 421-22 (1991) (appellant was referred for a position but not selected).</p>
+<p class="Body-Text">The Federal Circuit suggested that a labor contract clause requiring an agency to reassign an employee before taking performance-based action against him is an unlawful derogation of management rights under 5 USC 7106. <span class="Italic">Horner v. Bell</span>, 825 F.2d 382 (Fed. Cir. 1987); <span class="Italic">cf.</span> <span class="Italic">AFGE Local 1923 v. FLRA</span>, 819 F.2d 306, 307 (D.C. Cir. 1987) (determining nonnegotiable a contract proposal that precluded management from removing an employee for unacceptable performance unless it first tried to reassign him to a position he could perform). <span class="Italic">But see</span> <span class="Italic">Brown v. IRS</span> (Fed. Cir. 1998 NP No. 97-3420) (there is no substantive right under law to obtain reassignment in lieu of a more drastic penalty in performance cases, but noting in passing Art. 13, &#x00A7; 8.B of an NTEU labor contract apparently providing the right of reassignment to an individual who "within the past year [was] promoted and subsequently demoted for inability to perform at the higher level"); <span class="Italic">cf.</span> <span class="Italic">Cook v. EEOC</span>, 50 MSPR 660 (1991) (neither the Board nor an arbitrator can mitigate a Chapter 43 action); <span class="Italic">Bardill v. Dept. of Army</span>, 41 MSPR 599, 602 (1989) (an arbitrator lacks authority to mitigate a Chapter 43 removal).</p>
+</section>
+</body>
+</htmltext>
+</html>

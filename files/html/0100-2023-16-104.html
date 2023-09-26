@@ -1,0 +1,732 @@
+<html>
+<cdb>broida mspb</cdb>
+<doctype>Chapter 09: Performance Cases</doctype>
+<doctitle>Chapter 09: Performance Cases, Subchapter 02: Within-Grade Increase Denials</doctitle>
+<htmltext><head>
+<style>
+body {
+-epub-hyphens:auto;
+-webkit-hyphens:auto;
+margin:1em;
+}
+a{
+text-decoration:none;
+}
+img{
+max-width:100%;
+vertical-align:middle;
+}
+h1.Ch-Head {
+font-family:"Arial", sans-serif;
+font-size:2.34em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+h1.Ch-Subhead {
+font-family:"Arial", sans-serif;
+font-size:2.17em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+border-bottom-style:double;
+padding-bottom:.2em;
+}
+p.Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Text-R {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-Rh {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-R2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+p.Body-Textl {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:-0.3em;
+margin-top:0.5em;
+text-align:left;
+text-indent:0em;
+}
+p.Body-Textc {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+h2.h2 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+margin-left:3em;
+text-align:left;
+text-indent:0em;
+}
+span.space{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-3em;
+}
+span.spacet{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+h3.h3 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:6em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h4.h4 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:8em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h5.h5 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:10em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h6.h6 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:12em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+div.box1{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2.5em;
+border-style:double;
+padding:0em;
+}
+div.box1a{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2em;
+border-style:double;
+padding:0em;
+}
+div.box1b{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 1.8em;
+border-style:double;
+padding:0em;
+}
+h1.csh {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+background-color:#E7E7E8;
+text-align:center;
+}
+div.box2{
+font-family:"Arial", sans-serif;
+margin:0.6em 1.5em 0em 1.5em;
+border:3px solid;
+padding:0em 0.3em 0em 0.3em;
+}
+h1.csh1 {
+font-family:"Arial", sans-serif;
+font-size:0.87em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+text-align:center;
+}
+ul.bull1{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.8em 0.3em 0.8em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull1p{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull12{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0.2em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.list{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 1.8em;
+padding:0em;
+text-align:left;
+}
+ul.listl{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 0.5em;
+padding:0em;
+text-align:left;
+}
+ul.listn{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+font-size:0.83em;
+margin:0em 0em 0.8em 0.5em;
+text-align:left;
+}
+li.listr2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 0em .7em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 2em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 4em;
+text-align:left;
+text-indent:-2.2em;
+padding:0.2em 0em 0em 0em;
+}
+li.listr2n{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.8em 0.1em .0em 0.2em;
+text-indent:-2.1em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2cn{
+padding-right:1em;
+}
+span.nl2cnb{
+padding-right:1.5em;
+}
+li.listr2b{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 0em -0.8em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2c{
+padding-right:2em;
+}
+p.listr3{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 0em .5em 0em;
+text-align:left;
+}
+li.nl2ca {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 0.2em;
+text-align:left;
+text-indent:0em;
+}
+li.nl2c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 2em;
+text-align:left;
+text-indent:0em;
+}
+span.nl2ca {
+font-family:"Arial", sans-serif;
+float:left;
+margin:0em 0em 0em -2em;
+}
+blockquote{
+font-family:"Arial", sans-serif;
+margin:0.5em 0em 0.5em 1.8em;
+}
+p.Block-Quote1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 3em;
+text-align:justify;
+}
+p.Block-Quote1s{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 1em 1.3em;
+text-align:justify;
+}
+p.Block-Quote2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 5em;
+text-align:justify;
+}
+p.Block-Quote3{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 7em;
+text-align:justify;
+}
+p.Block-Quote4{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 9em;
+text-align:justify;
+}
+p.Block-Quote5{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 11em;
+text-align:justify;
+}
+p.Block-Quote6{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 13em;
+text-align:justify;
+}
+p.b2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 4.5em;
+text-align:left;
+}
+p.Body-Text-1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:.5em;
+margin-top:.5em;
+text-align:left;
+text-indent:0em;
+}
+p.box-Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin:0.5em 0 0.5em 0;
+text-align:left;
+text-indent:0em;
+}
+.Italic{
+font-family:"Arial", sans-serif;
+font-style:italic;
+}
+p.C-P-box-body-text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C-P-box-body-text2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.2em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+padding:0.3em;
+text-indent:0em;
+}
+p.C-P-box-body-text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C1-P-box-Body-Text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em 0.2em 0.2em 0.7em;
+text-align:left;
+text-indent:0em;
+}
+p.td2b{
+font-family:"Arial", sans-serif;
+font-size:0.92em;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+p.td2b1{
+font-family:"Arial", sans-serif;
+font-size:1.2em !important;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+span.white{
+font-family:"Arial", sans-serif;
+color:white;
+}
+.img{
+font-family:"Arial", sans-serif;
+margin:0em 0.4em 0em 1em;
+text-indent:0em;
+}
+td.practice-para, p.practice-para{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+text-indent:0em;
+}
+td.practice-parats{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+padding:0.5em 0em 0em 1.5em;
+text-indent:0em;
+}
+td.practice-paratd{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+text-indent:0em;
+}
+td.practice-paratd1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+border-right:2px solid;
+text-indent:0em;
+}
+ p.practice-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+ p.practice-para2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+div.black{
+font-family:"Arial", sans-serif;
+background-color:#000000;
+color:#FFFFFF;
+padding:.2em 1em .2em 1em;
+}
+.practice-para-h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 0em 0em 0.8em;
+text-align:center;
+text-indent:0em;
+}
+.hang{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 6em;
+text-align:left;
+}
+.list-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 2.7em;
+text-align:left;
+}
+.list-para2{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 3.7em;
+text-align:left;
+}
+small.ch{
+font-family:"Arial", sans-serif;
+font-size:0.75em;
+}
+small.cs{
+font-family:"Arial", sans-serif;
+font-size:0.65em;
+}
+span.pad{
+padding-right:2em;
+}
+table.table{
+border-collapse:collapse;
+max-width:100%;
+margin:0em 1.5em 0em 1.5em;
+}
+table.table1{
+border-collapse:collapse;
+max-width:100%;
+margin:-1em 1em 0em 1em;
+margin-left:auto;
+margin-right:auto;
+}
+div.practice{
+font-family:"Arial", sans-serif;
+font-size:1.25em;
+margin:0em .5em 0 0;
+text-align:center;
+padding:.5em;
+text-indent:0em;
+background-color:#E7E7E8;
+}
+p.list {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.list2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:6.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list2{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.Body-Address {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:0.25em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Address-h {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:1em;
+text-align:justify;
+text-indent:0em;
+}
+table.table
+{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+margin-bottom: 1.5em;
+margin-top:1.5em;
+text-align:left;
+text-indent:0em;
+font-size:0.95em;
+border-collapse:collapse;
+width:100%;
+border:1px solid #000;
+}
+table.table tbody td.td{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+font-size:1em;
+font-weight:normal;
+margin-bottom:0em;
+margin-top:0em;
+padding:0.5em;
+text-indent:0em;
+vertical-align:top;
+color:#000;
+text-align:left;
+font-weight:normal;
+border:1px solid #000;
+}
+table.table tbody td.td p.list {
+font-family:"Arial", sans-serif;
+font-size:1em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+table.table tbody td.td span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+span.small
+{
+font-size:0.75em;
+}
+span.blue
+{
+color:#0000FF;
+}
+span.Italic
+{
+font-family:"Arial", sans-serif;font-style:italic;}
+span.BoldItalic
+{
+font-family:"Arial", sans-serif;font-style:italic;font-weight:bold;}
+span.Bold
+{font-family:"Arial", sans-serif;font-weight:bold;}
+</style>
+</head>
+<body>
+<section>
+<h2 class="h2" id="sec9-103"><span class="space">II.</span> WITHIN-GRADE INCREASE DENIALS</h2>
+<p class="Body-Text">The within-grade increase, or WIGI, is a relatively routine salary increase for General Schedule employees. It is earned by service within a particular grade for a period of time determined by the step of the grade. The step increase is independent of government-wide cost of living adjustments. It is awarded only if the employee has maintained what is referred to as an "acceptable level of competence" (ALOC) during the waiting period for the increase. The ALOC equates to fully satisfactory performance rating. "An employee is entitled to receive a WIGI in the rate of basic pay if she is performing at an acceptable level of competence at the end of the statutory waiting period. 5 U.S.C. &#x00A7; 5335(a). For purposes of granting or denying a WIGI, 'acceptable level of competence' means 'fully successful' or better on the most recent rating of record. 5 C.F.R. &#x00A7; 531.404(a)." <span class="Italic">Lewis v. EPA,</span> CH-531D-12-0278-I-1 (NP 5/1/2013). The WIGI scheme is regulated at 5 CFR 531 Subpart D. Evolution of the WIGI system is described in <span class="Italic">Griffith v. FLRA</span>, 842 F.2d 487 (D.C. Cir. 1988). Refer to MSPB's Research Brief, Determining an Acceptable Level of Competence for Step Increases (MSPB Office of Policy and Evaluation April 2021). <a href="https://www.mspb.gov/studies/researchbriefs/Determining_an_Acceptable_Level_of_Competence_for_Step_Increases_1823371.pdf">https://www.mspb.gov/studies/researchbriefs/Determining_an_Acceptable_Level_of_Competence_for_Step_Increases_1823371.pdf</a>.</p>
+<p class="Body-Text"><span class="Italic">Oulianova v. PBGC</span>, 120 MSPR 22, 25 &#x00B6; 6, 2013 MSPB 55 (2013), summarized the process:</p>
+<p class="Block-Quote1">Under 5 U.S.C. &#x00A7; 5335(a), an employee who occupies a permanent General Schedule position, is paid on an annual basis, and has not reached the maximum rate of pay for the grade of her position is entitled to periodic step increases in pay at set intervals subject to the following conditions: (1) The employee has not already received an equivalent increase in pay from any cause during that period; and (2) the employee is performing at an acceptable level of competence. <span class="Italic">See</span> 5 C.F.R. &#x00A7; 531.404. For the purposes of granting or denying a WIGI, "acceptable level of competence" means that the employee achieved a "fully successful," i.e., a Level 3 rating or better, on her most recent rating of record. 5 C.F.R. &#x00A7;&#x00A7; 531.404(a), .409(b). For agencies not covered by chapter 43 and for employees in positions excluded from 5 U.S.C. &#x00A7; 4301, an acceptable level of competence determination is based on performance appraisal requirements established by the agency. 5 C.F.R. &#x00A7; 531.409(b).</p>
+<p class="Body-Text"><span class="Italic">Oulianova</span> also noted that a wholly-owned government corporation is not bound by the requirements of 5 USC Chapter 43. Its burden of proof in an ALOC denial appeal is only to establish its case by substantial evidence based on its own performance appraisal requirements. <span class="Italic">Id</span>. at &#x00B6; 7.</p>
+<p class="Body-Text">That the WIGI-related appeal is unavailable to employees not under the General Schedule was reiterated by <span class="Italic">Waldron v. DHS</span>, SF-0752-12-0641-I-1 (NP 1/6/2014):</p>
+<p class="Block-Quote1">The agency's argument of the law with respect to the Board's jurisdiction over purported WIGI appeals of employees not paid under the GS scale is correct. <span class="Italic">See Mitchell v. Department of Homeland Security</span>, 102 M.S.P.R. 636, &#x00B6; 10 (2006) (Transportation Security Agency employees are not paid under the General Schedule and are not entitled to WIGIs). Section 5335(a) of Title 5 of the United States Code makes clear that periodic step-increases are applicable to employees paid on an annual basis who, among other conditions, occupy "permanent position[s] within the scope of the General Schedule." We also note that, under 5 C.F.R. &#x00A7; 1201.3(a)(8), the Board only has jurisdiction over a "[r]econsideration decision sustaining a negative determination of competence for a general schedule employee," and there is no indication here that the appellant received a reconsideration decision. <span class="Italic">See</span> 5 U.S.C. &#x00A7; 5335(c); 5 C.F.R. &#x00A7; 531.410 (the Board has jurisdiction over an employee's appeal from the agency's withholding of a WIGI only if the employee has sought reconsideration of the agency's decision to withhold the WIGI, and if the agency has affirmed its initial decision on reconsideration); <span class="Italic">see also Goines v. Merit Systems Protection Board</span>, 258 F.3d 1289, 1292 (Fed. Cir. 2001).</p>
+<p class="Body-Text"><span class="Italic">See</span> <span class="Italic">Duquette v. Dept. of Treasury</span>, AT-3443-16-0257-I-1 (NP 6/23/2016) ("Further, we find that the administrative judge correctly noted that employees of the IRS have no right under 5 U.S.C. &#x00A7; 9508(d)(2) to appeal a denial of a periodic step increase under 5 U.S.C. &#x00A7; 5335 to the Board"); <span class="Italic">Fleming v. Dept. of Navy,</span> PH-1221-15-0056-W-1 (NP 6/30/2015) ("Chapter 53 of the U.S. Code, Pay Rates and Systems, addresses federal pay fixing for GS employees and includes a provision for periodic step increases for such employees. 5 U.S.C. &#x00A7; 5335. It applies only to those who are covered by section 5102, which specifically excludes civilian professors, lecturers, and instructors at the Naval Academy. 5 U.S.C. &#x00A7; 5102(c)(10). Moreover, such employees are not GS employees; rather, their pay is prescribed by the Secretary of the Navy. 10 U.S.C. &#x00A7; 6952(b). <span id="Page_2975"></span>Pursuant to the Office of Personnel Management's authority to promulgate regulations necessary for the administration of GS pay rates, including WIGIs, 5 C.F.R. &#x00A7; 531.401(c), employees entitled to WIGIs must be classified under the GS, 5 C.F.R. &#x00A7; 531.402(a)(2), and may appeal to the Board if their agency determines that their performance is not at an acceptable level of competence and that determination is upheld on reconsideration, 5 C.F.R. &#x00A7; 531.410(a), (d)."); <span class="Italic">Huth v. Dept. of Transp</span>., CH-531D-13-0285-I-1 (NP 3/7/2014) ("She argues that the FAA should not be permitted to utilize a pay plan that precludes employees from receiving within-grade increases. However, we discern no error in the administrative judge's dismissal of this appeal for lack of jurisdiction because the appellant is paid under the 'FV' pay plan and, as such, is not entitled to within-grade increases. <span class="Italic">See</span> 5 U.S.C. &#x00A7; 5335(a) (indicating that periodic step-increases are applicable to employees paid on an annual basis who, among other conditions, occupy 'permanent position[s] within the scope of the General Schedule'); <span class="Italic">see also</span> 5 C.F.R. &#x00A7; 1201.3(a)(8) (indicating that the Board has jurisdiction over the denial of within-grade pay increase 'for a general schedule employee').").</p>
+<p class="Body-Text">The within-grade increase is normally routinely granted. If the step increase is denied, the employee has the right to seek reconsideration of the denial through agency procedures defined by OPM regulations. If reconsideration is denied, the employee may seek MSPB review, 5 USC 5335(c), <span class="Italic">Schaefer v. Dept. of Transp.</span>, 87 MSPR 37, 40-41 &#x00B6; 7 (2000):</p>
+<p class="Block-Quote1">Under chapter 53 of Title 5 of the United States Code, an employee earns a WIGI upon completion of the applicable waiting period so long as, <span class="Italic">inter alia</span>, he is performing at an acceptable level of competence. 5 USC &#x00A7; 5335(a). If an agency determines that an employee is not performing at an acceptable level of competence and withholds a WIGI, the employee is entitled to "an opportunity for reconsideration...within his agency under uniform procedures prescribed by the Office of Personnel Management." 5 USC &#x00A7; 5335(c). "If the determination [to withhold the WIGI] is affirmed on reconsideration, the employee is entitled to appeal to the Merit Systems Protection Board." <span class="Italic">Id</span>. Thus, the Board can exercise jurisdiction over an appeal from the withholding of a WIGI as an otherwise appealable action under chapter 53 only if the agency has affirmed its initial determination upon reconsideration or has unreasonably refused to act on a request for reconsideration<span class="Italic">. Shaishaa v. Department of the Army</span>, 58 MSPR 450, 453 (1992).</p>
+<p class="Body-Text">Board jurisdiction in WIGI denial appeals is summarized, <span class="Italic">Hobbs v. DOJ,</span> DC-531D-10-0054-I-1 (NP 8/23/2010):</p>
+<p class="Block-Quote1">The Board's jurisdiction is not plenary but is limited to those matters specifically entrusted to it by statute, rule, or regulation. <span class="Italic">Munson v. Merit Systems Protection Board</span>, 216 F.3d 1037, 1039 (Fed. Cir. 2000). If an agency denies a within-grade increase (WIGI) in pay of a permanent employee covered under the General Schedule, the employee must first seek reconsideration from the agency, and if the agency affirms the denial of the WIGI on reconsideration, the employee may appeal the agency's reconsideration decision to the Board. 5 U.S.C. &#x00A7; 5335(c); 5 C.F.R. &#x00A7; 531.410(d). Therefore, the Board can only exercise jurisdiction over an appeal from a denial of a WIGI if the agency affirms its initial denial after a timely request for reconsideration is made by the employee. <span class="Italic">Priselac v. Department of the Navy</span>, 77 M.S.P.R. 332, 335 (1998); <span class="Italic">Shaishaa v. Department of the Army</span>, 58 M.S.P.R. 450, 453 (1992). The only exception that would provide Board jurisdiction in a case where the employing agency has not affirmed its denial occurs when the agency has been unreasonable in failing or refusing to act on the employee's request for reconsideration. <span class="Italic">Shaishaa</span>, 58 M.S.P.R. at 453.</p>
+<p class="Body-Text">The mechanics of the WIGI denial and Board appeal, as well as the jurisdictional effect of the agency's failure to provide written notice to the appellant of the right to request reconsideration, were described by <span class="Italic">Ahuruonye v. Dept. of Interior</span>, DC-531D-14-0587-I-1 (NP 12/29/2014):</p>
+<p class="Block-Quote1">A WIGI may be denied if an employee is not performing at an acceptable level of competence. 5 U.S.C. &#x00A7; 5335(a). To be rated at an acceptable level of competence, an employee's performance must be at least Fully Successful or the equivalent. When a determination is made that the work of an employee is not of an acceptable level of competence to warrant a WIGI, the employee is entitled to prompt written notice of that determination and an opportunity for reconsideration of that determination within his agency under uniform procedures prescribed by the Office of Personnel Management (OPM). If the determination to deny a WIGI is affirmed on reconsideration, the employee is entitled to appeal that decision to the Merit Systems Protection Board. 5 U.S.C. &#x00A7; 5335(c).</p>
+<p class="Block-Quote1">Under regulations promulgated by OPM to effectuate this statute, when a supervisor determines that an employee's performance is not at an acceptable level of competence, the negative determination shall be communicated to the employee in writing and shall set forth the reasons for the determination and the respects in which the employee must improve his performance in order to be granted a WIGI, and it shall inform the employee of his right to request reconsideration of the determination. 5 C.F.R. &#x00A7; 531.409(e)(2).</p>
+<p class="Block-Quote1">Here, the agency relied upon the Minimally Successful performance rating it provided to the appellant in 2014 to support the denial of his WIGI, and the administrative judge appeared to have no issue with such reliance. While it is true that a determination to withhold a WIGI shall be based on a current rating of record, 5 C.F.R. &#x00A7; 531.409(b), the regulations do not suggest, and we discern no support for finding, that such a rating, even if less than Fully Successful, obviates an agency's need to issue an employee a negative determination as to his level of competence, as set forth in OPM's regulations, 5 C.F.R. &#x00A7; 531.409(e)(2), when it intends to deny his WIGI. Although the agency did not grant the appellant a WIGI to step 3, it failed to issue him a notice, as required, that his performance was not at an acceptable level. The agency's actions regarding the appellant's performance rating do not satisfy this requirement. The Board has jurisdiction over this appeal because the appellant's failure to seek a reconsideration decision was based on the agency's failure to provide him with notice of the denial of his WIGI and the opportunity to seek reconsideration of that negative determination. <span class="Italic">Cf</span>. <span class="Italic">Shaishaa v. Department of the Army</span>, 58 M.S.P.R. 450, 453 (1992) (the Board has jurisdiction, even absent a reconsideration decision, when an agency improperly denies an appellant an opportunity for reconsideration by failing or refusing to act on a request for reconsideration).</p>
+<p class="Body-Text"><span class="Italic">Knight v. MSPB</span>, 353 Fed. Appx. 439, 440-41 (Fed. Cir. 2009 NP), explained MSPB jurisdictional prerequisites in a WIGI appeal:</p>
+<p class="Block-Quote1">Under the GS scale for government employees, there are fifteen grades with increasingly higher salaries. Each grade has ten salary "steps," and employees receive step promotions, known as "within-grade increases," after stated periods. To receive a within-grade increase, an employee's work must be at "an acceptable level of competence as determined by the head of the agency." 5 U.S.C. &#x00A7; 5335(a). If the agency determines that an employee's work is not at an acceptable level, "the employee is entitled to prompt written notice of that determination and an opportunity for reconsideration of the determination within his agency under uniform procedures prescribed by the Office of Personnel Management." 5 U.S.C. &#x00A7; 5335(c). If the determination is affirmed on reconsideration, the employee is entitled to appeal to the Board. <span class="Italic">Id.</span> Under decisions of this court, an employee must request reconsideration of the decision to withhold a within-grade increase before seeking Board review. <span class="Italic">See Goines v. Merit Sys. Prot. Bd.,</span> 258 F.3d 1289, 1292 (Fed. Cir. 2001). Office of Personnel Management ("OPM") regulations require that the request for reconsideration be made within fifteen days of the employee's receipt of a negative determination of performance level. 5 C.F.R. &#x00A7; 531.410(a)(1). Here, Knight did not timely request reconsideration.</p>
+<p class="Block-Quote1">...</p>
+<p class="Block-Quote1">Failure to seek timely reconsideration of a denial of a within-grade increase precludes Board review of the issue. <span class="Italic">See Goines,</span> 258 F.3d at 1292; <span class="Italic">see also Priselac v. Dep't of the Navy,</span> 77 M.S.P.R. 332, 335 (1998); <span class="Italic">Shaishaa v. Dep't of the Army,</span> 58 M.S.P.R. 450, 453 (1992); <span class="Italic">Renshaw v. Dep't of the Army,</span> 23 M.S.P.R. 441, 442 (1984); <span class="Italic">Bueschel v. Dep't of Health and Human Servs.,</span> 7 M.S.P.R. 21, 23 (1981).</p>
+<p class="Block-Quote1">In this case, the AJ found that Knight failed to timely request reconsideration of her within-grade increase, even though the agency properly informed her of her right to do so. We see nothing in the record that warrants setting aside this finding. Under such circumstances, the Board correctly dismissed Knight's appeal for lack of jurisdiction.</p>
+<p class="Body-Text">The interim relief appointment is a separate, distinct appointment triggering commencement of a waiting period for purposes of WIGI determinations. <span class="Italic">See</span> <span class="Italic">Fahrenbacher v. Dept. of Navy</span>, 85 MSPR 500, 505 &#x00B6; 9 (2000) (in a USERRA nonselection case involving interim relief, the appellant was not entitled to an advancement in step for the period between the date the position was filled and the date of the initial decision); <span class="Italic">Davis v. DOJ</span>, 63 MSPR 360, 364-65 (1994) (analyzing impact of interim relief upon WIGI waiting period). [Refer to Chapter 16, "<a href="0100-2023-23-091.html#sec16-90">Interim Promotion; WIGI; Pay Increase</a>."] For the unusual situation of the timing of a WIGI of the demotion of a probationary supervisor to a position at the appellant's grade prior to the promotion to supervision, refer to <span class="Italic">Smith v. DHS</span>, CH-531D-16-0196-I-1 (NP 9/14/2016).</p>
+<p class="Body-Text">For the Board to have jurisdiction over a step increase appeal, it must have jurisdiction over the appellant. The Board lacked jurisdiction over the WIGI appeal of an individual appointed under 10 USC 1590(a) (1995), a provision granting to the Secretary of Defense the authority to establish positions for civilian intelligence personnel of military departments without regard to classification laws. <span class="Italic">See</span> <span class="Italic">Monser v. Dept. of Army</span>, 67 MSPR 477, 480 (1995). [Refer to Chapter 1, "<a href="0100-2023-08-046.html#sec1-47">Preliminary Appellant Jurisdictional Analysis</a>."] Although a negative ALOC determination can be appealed by excepted, and competitive, service employees, <span class="Italic">Patton v. DHHS</span>, 19 MSPR 197, 198-99 (1984) (at the time the Board had jurisdiction over ALOC but not the performance-based adverse action appeal of an excepted service, nonpreference-eligible attorney), the statutes granting MSPB jurisdiction over within-grade increases of federal employees--5 USC 5335(c) and implementing regulations, 5 CFR 531.410(d), 1201.3(a)(8) (2022)--do not apply to preference-eligible postal employees. <span class="Italic">Jackson v. USPS</span> (Fed. Cir. 1987 NP No. 87-3226); <span class="Italic">Burnett v. USPS</span>, 104 MSPR 308, 315 &#x00B6; 14, 2006 MSPB 365 (2006) ("Postal Service employees, whether they <span id="Page_2976"></span>are preference eligible or not, have no right of appeal from the denial of a WIGI"); <span class="Italic">Smyth v. USPS</span>, 31 MSPR 99, 100 (1986). The Postal Reorganization Act does not make Chapter 53 applicable to the Postal Service. Subchapter III of Chapter 53, pertaining to step increases, applies only to executive agencies, the Administrative Office of the United States Courts, the Library of Congress, Botanic Garden, GPO, Architect of the Capitol, and to covered employees of the D.C. Government. <span class="Italic">Smyth v. USPS</span>, 31 MSPR 99, 100 (1986). Nor does the right to appeal the denial of a step increase extend to prevailing rate ("wage grade") employees. <span class="Italic">Chia v. Dept. of Interior</span>, 26 MSPR 412, 413 n.* (1985); <span class="Italic">see</span> <span class="Italic">Hall v. Dept. of Navy</span>, 73 MSPR 251, 254 (1997). Employees of the IRS appear to be statutorily excluded from MSPB WIGI appellate procedures. <span class="Italic">See</span> 5 USCA 9508(d)(2) (exclusion beginning July 1999; a result of the establishment of a separate performance management system for IRS employees). For the limitations placed on employees in OPM-approved demonstration projects to appeal step increase or similar pay denials, refer to <span class="Italic">Redditt v. Dept. of Army</span>, 88 MSPR 41, 44-45 (2001) (OPM has authority to waive 5 USC 5335(c) in a demonstration project).</p>
+<p class="Body-Text">The step increase is established by statute, 5 USC 5335, and governed by OPM regulations at 5 CFR Part 531, Subpart D (2022), &#x00A7;&#x00A7; 531.401 <span class="Italic">et seq.</span> Although the WIGI is not tied statutorily to performance appraisal systems established by Chapter 43, OPM regulations provide a linkage if a performance appraisal system is in effect for the employee. Under 5 CFR 531.404 (2022) a step increase is earned if the employee serves the requisite waiting period and has a rating under 5 CFR 430.203 at the level of at least fully successful. For a time, the Board seemingly allowed agencies to use <span class="Italic">ad hoc</span> performance standards to determine whether step increases should be awarded even when performance appraisal systems were in place, essentially providing to the agencies the choice of using an appraisal system or an alternative system to grant the benefit. [Refer later in this chapter to "<a href="0100-2023-16-112.html#sec9-109">Role of Performance Standards</a>" and "<a href="0100-2023-16-117.html#sec9-114">Linkage of ALOC and Appraisal System</a>."]</p>
+<p class="Body-Text">Considering the relatively small amount of money a WIGI denial involves compared to that involved in a discharge or demotion, the expense of the litigation of an appeal dwarfs the amount of back pay that can be recovered. The WIGI appeal is a full-blown performance review undertaken <span class="Italic">de</span> <span class="Italic">novo</span> by the Board after the agency completes a reconsideration review that itself produces an administrative record. The real significance of the WIGI case is not the amount of money at stake, but the judgment of the agency that the employee's work is not fully satisfactory, meaning that the next or concurrent step may well be, and frequently is, a performance improvement period, followed by a proposal to demote or remove for unacceptable performance. The Board has applied collateral estoppel in removal cases that follow unsuccessful WIGI appeals, so appellants and counsel must be wary of the step increase denial and the potential for later and much more serious adverse consequences on a WIGI appeal. If the appellant's WIGI is denied, the agency may move on a Chapter 43 or Chapter 75 removal or demotion based on the negative ALOC determination. <span class="Italic">See</span> <span class="Italic">Gregory v. Dept. of Educ.</span>, 16 MSPR 144, 146 (1983) (a demotion under Chapter 75, following and based upon performance problems, was reflected in an ALOC determination). If the adverse action is for reasons other than performance, the agency's grant (or denial) of a step increase should have little to do with the merits of the adverse action. <span class="Italic">See</span> <span class="Italic">Price v. VA</span>, 13 MSPR 107, 110 (1982). [Refer to Chapter 4, "<a href="0100-2023-11-099.html#sec4-100">Collateral Estoppel</a>," as to of successive Board cases; refer to Chapter 8, "<a href="0100-2023-15-291.html#sec8-289">Performance as Basis for Adverse Action</a>," for performance-based actions under Chapter 75.] It occurs with some frequency that a removal and a WIGI denial case are both heard together. Occasionally the joined cases will be adjudicated under different standards of evidence: the preponderance test for a Chapter 75 performance-based removal case; the substantial evidence test for a WIGI denial.</p>
+<p class="Body-Text">The reader should refer to OPM regulations on the subject, at 5 CFR 531.401-.414 (2022), and to the regulations of the employing agency for a full procedural outline of the ALOC and reconsideration process. For a discussion of the impact of the harmful error rule on the many possible errors in the WIGI procedures, refer to Chapter 11, "<a href="0100-2023-18-003.html#sec11-4"><span class="Italic">Parker</span></a>," and, in particular, to <span class="Italic">Parker v. DLA</span>, 1 MSPR 505, 1 MSPB 489 (1980), discussed in that chapter. Presented here are only the highlights of Board decisions on appeals from step increase denials. OPM has modified its regulations concerning notice periods following negative ALOC determinations. Obsolete decisions about problems developing from inadequate notice periods have been deleted from the text to avoid confusion. Cited decisions should be examined to determine the precise regulations that governed their disposition.</p>
+</section>
+</body>
+</htmltext>
+</html>

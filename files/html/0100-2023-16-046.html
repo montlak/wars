@@ -1,0 +1,742 @@
+<html>
+<cdb>broida mspb</cdb>
+<doctype>Chapter 09: Performance Cases</doctype>
+<doctitle>Chapter 09: Performance Cases, Subchapter 01: Unacceptable Performance Cases, Section D: Performance Standard Criteria, Subsection 12: Multiple Components</doctitle>
+<htmltext><head>
+<style>
+body {
+-epub-hyphens:auto;
+-webkit-hyphens:auto;
+margin:1em;
+}
+a{
+text-decoration:none;
+}
+img{
+max-width:100%;
+vertical-align:middle;
+}
+h1.Ch-Head {
+font-family:"Arial", sans-serif;
+font-size:2.34em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+h1.Ch-Subhead {
+font-family:"Arial", sans-serif;
+font-size:2.17em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+border-bottom-style:double;
+padding-bottom:.2em;
+}
+p.Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Text-R {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-Rh {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-R2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+p.Body-Textl {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:-0.3em;
+margin-top:0.5em;
+text-align:left;
+text-indent:0em;
+}
+p.Body-Textc {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+h2.h2 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+margin-left:3em;
+text-align:left;
+text-indent:0em;
+}
+span.space{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-3em;
+}
+span.spacet{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+h3.h3 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:6em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h4.h4 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:8em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h5.h5 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:10em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h6.h6 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:12em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+div.box1{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2.5em;
+border-style:double;
+padding:0em;
+}
+div.box1a{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2em;
+border-style:double;
+padding:0em;
+}
+div.box1b{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 1.8em;
+border-style:double;
+padding:0em;
+}
+h1.csh {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+background-color:#E7E7E8;
+text-align:center;
+}
+div.box2{
+font-family:"Arial", sans-serif;
+margin:0.6em 1.5em 0em 1.5em;
+border:3px solid;
+padding:0em 0.3em 0em 0.3em;
+}
+h1.csh1 {
+font-family:"Arial", sans-serif;
+font-size:0.87em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+text-align:center;
+}
+ul.bull1{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.8em 0.3em 0.8em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull1p{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull12{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0.2em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.list{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 1.8em;
+padding:0em;
+text-align:left;
+}
+ul.listl{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 0.5em;
+padding:0em;
+text-align:left;
+}
+ul.listn{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+font-size:0.83em;
+margin:0em 0em 0.8em 0.5em;
+text-align:left;
+}
+li.listr2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 0em .7em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 2em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 4em;
+text-align:left;
+text-indent:-2.2em;
+padding:0.2em 0em 0em 0em;
+}
+li.listr2n{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.8em 0.1em .0em 0.2em;
+text-indent:-2.1em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2cn{
+padding-right:1em;
+}
+span.nl2cnb{
+padding-right:1.5em;
+}
+li.listr2b{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 0em -0.8em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2c{
+padding-right:2em;
+}
+p.listr3{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 0em .5em 0em;
+text-align:left;
+}
+li.nl2ca {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 0.2em;
+text-align:left;
+text-indent:0em;
+}
+li.nl2c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 2em;
+text-align:left;
+text-indent:0em;
+}
+span.nl2ca {
+font-family:"Arial", sans-serif;
+float:left;
+margin:0em 0em 0em -2em;
+}
+blockquote{
+font-family:"Arial", sans-serif;
+margin:0.5em 0em 0.5em 1.8em;
+}
+p.Block-Quote1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 3em;
+text-align:justify;
+}
+p.Block-Quote1s{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 1em 1.3em;
+text-align:justify;
+}
+p.Block-Quote2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 5em;
+text-align:justify;
+}
+p.Block-Quote3{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 7em;
+text-align:justify;
+}
+p.Block-Quote4{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 9em;
+text-align:justify;
+}
+p.Block-Quote5{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 11em;
+text-align:justify;
+}
+p.Block-Quote6{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 13em;
+text-align:justify;
+}
+p.b2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 4.5em;
+text-align:left;
+}
+p.Body-Text-1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:.5em;
+margin-top:.5em;
+text-align:left;
+text-indent:0em;
+}
+p.box-Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin:0.5em 0 0.5em 0;
+text-align:left;
+text-indent:0em;
+}
+.Italic{
+font-family:"Arial", sans-serif;
+font-style:italic;
+}
+p.C-P-box-body-text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C-P-box-body-text2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.2em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+padding:0.3em;
+text-indent:0em;
+}
+p.C-P-box-body-text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C1-P-box-Body-Text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em 0.2em 0.2em 0.7em;
+text-align:left;
+text-indent:0em;
+}
+p.td2b{
+font-family:"Arial", sans-serif;
+font-size:0.92em;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+p.td2b1{
+font-family:"Arial", sans-serif;
+font-size:1.2em !important;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+span.white{
+font-family:"Arial", sans-serif;
+color:white;
+}
+.img{
+font-family:"Arial", sans-serif;
+margin:0em 0.4em 0em 1em;
+text-indent:0em;
+}
+td.practice-para, p.practice-para{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+text-indent:0em;
+}
+td.practice-parats{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+padding:0.5em 0em 0em 1.5em;
+text-indent:0em;
+}
+td.practice-paratd{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+text-indent:0em;
+}
+td.practice-paratd1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+border-right:2px solid;
+text-indent:0em;
+}
+ p.practice-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+ p.practice-para2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+div.black{
+font-family:"Arial", sans-serif;
+background-color:#000000;
+color:#FFFFFF;
+padding:.2em 1em .2em 1em;
+}
+.practice-para-h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 0em 0em 0.8em;
+text-align:center;
+text-indent:0em;
+}
+.hang{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 6em;
+text-align:left;
+}
+.list-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 2.7em;
+text-align:left;
+}
+.list-para2{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 3.7em;
+text-align:left;
+}
+small.ch{
+font-family:"Arial", sans-serif;
+font-size:0.75em;
+}
+small.cs{
+font-family:"Arial", sans-serif;
+font-size:0.65em;
+}
+span.pad{
+padding-right:2em;
+}
+table.table{
+border-collapse:collapse;
+max-width:100%;
+margin:0em 1.5em 0em 1.5em;
+}
+table.table1{
+border-collapse:collapse;
+max-width:100%;
+margin:-1em 1em 0em 1em;
+margin-left:auto;
+margin-right:auto;
+}
+div.practice{
+font-family:"Arial", sans-serif;
+font-size:1.25em;
+margin:0em .5em 0 0;
+text-align:center;
+padding:.5em;
+text-indent:0em;
+background-color:#E7E7E8;
+}
+p.list {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.list2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:6.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list2{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.Body-Address {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:0.25em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Address-h {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:1em;
+text-align:justify;
+text-indent:0em;
+}
+table.table
+{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+margin-bottom: 1.5em;
+margin-top:1.5em;
+text-align:left;
+text-indent:0em;
+font-size:0.95em;
+border-collapse:collapse;
+width:100%;
+border:1px solid #000;
+}
+table.table tbody td.td{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+font-size:1em;
+font-weight:normal;
+margin-bottom:0em;
+margin-top:0em;
+padding:0.5em;
+text-indent:0em;
+vertical-align:top;
+color:#000;
+text-align:left;
+font-weight:normal;
+border:1px solid #000;
+}
+table.table tbody td.td p.list {
+font-family:"Arial", sans-serif;
+font-size:1em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+table.table tbody td.td span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+span.small
+{
+font-size:0.75em;
+}
+span.blue
+{
+color:#0000FF;
+}
+span.Italic
+{
+font-family:"Arial", sans-serif;font-style:italic;}
+span.BoldItalic
+{
+font-family:"Arial", sans-serif;font-style:italic;font-weight:bold;}
+span.Bold
+{font-family:"Arial", sans-serif;font-weight:bold;}
+</style>
+</head>
+<body>
+<section>
+<h4 class="h4" id="sec9-45"><span class="space">12.</span> Multiple Components</h4>
+<p class="Body-Text">An issue in <span class="Italic">Shuman v. Dept. of Treasury</span>, 23 MSPR 620, 627-28 (1984), was whether an agency may establish a standard incorporating more than one component--e.g. a compound standard:</p>
+<p class="Block-Quote1">The regulatory definition of "performance standard" does not provide specifically that an agency may or may not establish a standard which consists of more than one component. The second sentence of the definition (which provides that the standard "may include...factors such as quality, quantity, timeliness, and manner of performance") is consistent, however, with the view that a performance standard may consist of more <span id="Page_2910"></span>than one component; in addition, it supports the view that an incumbent may be required to perform acceptably with respect to each component of the standard, since it is difficult to imagine a position wherein the incumbent is not expected to perform acceptably with respect to each of the "quality, quantity, [and] timeliness" factors mentioned in that sentence....&#8197;We find, therefore, that a performance standard may consist of more than one component, and that the incumbent of a position for which a multiple standard has been established may be required to perform acceptably with respect to each of the components of the standard.</p>
+<p class="Body-Text">To avoid reducing removal proceedings to fragmented analysis of compartmentalized standards, although the agency may have subelements within a standard, the agency must present substantial evidence that the appellant's performance under that standard warranted an unacceptable rating on the related critical element as a whole. Under <span class="Italic">Shuman</span>, <span class="Italic">supra</span>, 23 MSPR at 628-29:</p>
+<p class="Block-Quote1">The evidence presented by the agency...should demonstrate that the appellant knew or should have known the significance of the component or components at issue, in addition to demonstrating that the appellant's deficiencies are significant enough to justify the action the agency has taken. Evidence relevant to this issue may include a showing that the appellant was notified (<span class="Italic">e.g.</span>, by a statement in the standard itself, in a document used to clarify it, or in discussions with the appellant) that failure to perform acceptably with respect to each component of the standard could be the basis for demotion or removal. It may also include a showing that other circumstances have indicated the importance of the part or parts of the standard which are at issue in the case. The latter category of evidence may include the importance of the component or components in relation to the duties and responsibilities with which the critical element as a whole is concerned; the relative importance of the component or components with respect to which the appellant has not been found to be deficient; and the consequences to the agency's mission of its employee's failure to perform acceptably with respect to the component or components at issue.</p>
+<p class="Body-Text"><span class="Italic">Tripathi v. NASA</span>, DC-0432-14-0612-I-1 (NP 7/28/2016), summarized <span class="Italic">Shuman</span>:</p>
+<p class="Block-Quote1">...A performance standard may consist of more than one component, and an employee working under such a standard may be required to perform acceptably as to each of these components. <span class="Italic">Shuman v. Department of the Treasury</span>, 23 M.S.P.R. 620, 628 (1984). However, where, as here, an employee is removed under 5 U.S.C. &#x00A7; 4303 on the basis of fewer than all the components of a performance standard for a critical performance element, the agency must present substantial evidence that the employee's performance warranted an unacceptable rating on the performance element as a whole. <span class="Italic">Id</span>. This evidence should demonstrate that the appellant knew or should have known the significance of the component at issue, in addition to demonstrating that his deficiencies were significant enough to justify the action taken. <span class="Italic">Id</span>. at 629.</p>
+<p class="Body-Text">Under<span class="Italic"> Shuman, supra</span>, if a performance standard has subelements, the fact that performance in one subelement is satisfactory does not preclude removal if the performance on the other subelements is unsatisfactory and if the performance receives an unacceptable rating on the critical element as a whole. <span class="Italic">Green v. Dept. of Labor</span>, 26 MSPR 96, 98 (1985); <span class="Italic">see</span> <span class="Italic">Griggs v. Dept. of Army</span>, 53 MSPR 597, 600 (1992) (when two components of a critical element were judged to be performed at an unacceptable level, and when the performance warranted an unacceptable rating for the element as a whole, no harmful error was committed by an AJ who incorrectly decided that another component of the same element was being performed at the unacceptable level); <span class="Italic">cf.</span> <span class="Italic">Hancock v. IRS</span>, 24 MSPR 263, 265 (1984) (<span class="Italic">Shuman</span> analysis is immaterial if the appellant wholly fails to meet another critical element, since failure to meet just one element justifies the performance action).</p>
+<p class="Body-Text"><span class="italic">Jordan v. Dept. of Navy</span>, DC-0432-16-0370-I-1 (NP 2/3/2023), reiterated the analysis:</p>
+<p class="Block-Quote1">An agency need not show that an employee's performance was unacceptable on a majority of components of a critical element to prove unacceptable performance on the critical element as a whole. <span class="italic">See, e.g., Rogers v. Department of Defense Dependents Schools</span>, 814 F.2d 1549, 1554 (Fed. Cir. 1987) (finding that an unsatisfactory performance on one of six components of one critical element and two of four components of another warranted an unacceptable rating on both critical elements); <span class="italic">Lee</span>, 115 M.S.P.R. 533, &#x00B6; 37 (finding that unsatisfactory performance in two of six components of one critical element warranted an unacceptable rating in that element). Indeed, unacceptable performance in only a single component of a critical job element can be sufficient to justify removal for unacceptable performance. <span class="italic">Wallace v. Department of the Air Force</span>, 879 F.2d 829, 834 (Fed. Cir. 1989); <span class="italic">see Shuman v. Department of the Treasury</span>, 23 M.S.P.R. 620, 627 (1984).</p>
+<p class="Body-Text"><span class="Italic">Atamantyk v. DOD</span>, 49 MSPR 432, 436-37 (1991), explained that the employee must be given fair notice of the need to improve in a performance subelement:</p>
+<p class="Block-Quote1">Before removing an employee for unacceptable performance, an agency must first inform the employee that he or she is performing unacceptably with respect to a critical element and then provide the employee with a reasonable opportunity to improve his or her performance with respect to the element in question. <span class="Italic">See</span> <span class="Italic">Smith v. Department of Health and Human Services</span>, 35 MSPR 101, 104-05 (1987) (appellant did not receive a reasonable opportunity to improve where agency removed appellant on basis of unacceptable performance under two critical elements without first rating appellant's performance as unacceptable and then affording appellant a reasonable opportunity to improve); <span class="Italic">cf.</span> <span class="Italic">Diaz v. Department of the Navy</span>, 25 MSPR 265, 267 (1984) (appellant received notice of unacceptable performance and an opportunity to improve where the agency clearly notified the appellant that it considered his performance of the first critical element unacceptable and of the second critical element marginal, and specifically explained how he could raise his performance to the acceptable level and provided an opportunity for him to do so).</p>
+<p class="Block-Quote1">In removing the appellant in the present case, the agency charged that the appellant performed unacceptably with respect to the performance standard component of "Responds to Freedom of Information Act (FOIA) requests in accordance with published directives, missing not more than 1 deadline," under the critical element of "Public Affairs." The agency specified that, during April and June of 1987, the appellant improperly responded to two FOIA requests by not providing available information, and that the assignments had to be completed by his supervisor.</p>
+<p class="Block-Quote1">The appellant asserts, however, and the agency concedes, that he was not informed about his unacceptable performance with respect to the FOIA component until the agency proposed his removal for unacceptable performance. The record corroborates the appellant's assertion by establishing that the agency did not inform him that his performance was unacceptable with respect to this component when it placed him on a PIP on March 13, 1987. With respect to the "Public Affairs" critical element, the PIP notice made no mention of the FOIA component. Instead, it specifically referred to and quoted a different component that pertained to writing, reviewing, and editing various articles. It indicated that the appellant was performing unacceptably under this other component, and it recommended that he make a greater effort to meet deadlines related to those articles.</p>
+<p class="Block-Quote1"><span class="Italic">Smith</span> and <span class="Italic">Diaz</span>, which we have cited above, pertained to notice and an opportunity to improve with respect to the entire standard for a critical element, while this case pertains to a component of a standard for a critical element. Despite this difference, we find that the reasoning of <span class="Italic">Smith</span> and <span class="Italic">Diaz</span> is applicable here. We do not hold that, in a case involving standards with multiple components, the agency may never base a removal on a component unless it has first noted deficiencies in that particular component and provided the employee with an opportunity to improve his performance on that component. In this case, however, the component at issue in the removal involves an entirely different set of tasks from those involved in the component cited in the PIP notice, and it involves an entirely different set of requirements. Furthermore, as we have indicated above, the PIP notice provided specific information about his writing, reviewing, and editing of articles, but failed even to mention the component at issue in the removal. Under these circumstances, we find that the agency's failure to inform the appellant about his unacceptable performance under the FOIA component prior to placing him on a PIP constitutes a failure to provide him with a reasonable opportunity to improve his performance under this component. The appellant's performance under this component, therefore, can not be used to support his removal. <span class="Italic">See</span> <span class="Italic">Smith</span>, 35 MSPR at 104-05; <span class="Italic">Cross v. Department of the Air Force</span>, 25 MSPR 353, 357 (1984) (agencies required to inform employee of relevant work objectives prior to appraisal period), <span class="Italic">aff'd</span>, 785 F.2d 320 (Fed. Cir. 1985); <span class="Italic">Sandland v. GSA</span>, 23 MSPR 583, 590 (1984); <span class="Italic">cf.</span> <span class="Italic">Diaz</span>, 25 MSPR at 267.</p>
+<p class="Body-Text">Similarly, in <span class="Italic">Player v. VA</span>, 32 MSPR 448, 452 (1987):</p>
+<p class="Block-Quote1">...The record establishes that the agency was primarily concerned with appellant's typing skills when it informed her of her unacceptable performance and provided her with an opportunity to improve. While the warning notice referenced the keypunch performance component, none of the instances of alleged poor performance cited in that notice concern keypunching. In fact, the agency first listed appellant's keypunching deficiencies in the mid-term evaluation of her performance during her performance improvement period. Finally, even though the agency cited keypunching failures in appellant's final evaluation, it did not rate her as failing to meet that part of the "productivity" standard on her performance appraisal....</p>
+<p class="Body-Text">The <span class="Italic">Shuman</span> analysis was approved in <span class="Italic">Adkins v. DHUD</span>, 781 F.2d 891 (Fed. Cir. 1986): what must be provided to the Board is evidence that the employee knew or should have known the significance of the subelements and evidence showing the importance of the subelements relative to the duties and responsibilities within the critical element. <span class="Italic">See</span> <span class="Italic">Rogers v. DODDS</span>, 814 F.2d 1549 (Fed. Cir. 1987); <span class="Italic">Luscri v. Dept. of Army</span>, 39 MSPR 482, 491 (1989) ("by explaining the importance of the individual performance standards in relation to the <span id="Page_2911"></span>critical elements as a whole, the agency correctly informed the appellant that unacceptable performance of any of the performance standards would constitute unacceptable performance of the critical element"); <span class="Italic">Sanchez v. Dept. of Air Force</span>, 27 MSPR 552, 555-56 (1985) ("although the manner of proof on this issue might vary from case to case, the agency's proof should demonstrate that the appellant knew or should have known the significance of the subelements at issue and should demonstrate that the deficient performance on the subelements warranted an unacceptable rating on the critical elements as a whole").</p>
+<p class="Body-Text">Under <span class="Italic">Mendez v. Dept. of Air Force</span>, 62 MSPR 579, 583-84 (1994), it is sufficient if the employee should have known of the significance of performance in the component of the standard:</p>
+<p class="Block-Quote1">A performance standard may consist of more than one component, and an employee working under such a standard may be required to perform acceptably with respect to each of these components. <span class="Italic">Shuman v. Department of the Treasury,</span> 23 MSPR 620, 628 (1984). However, where, as here, an employee is removed under 5 USC &#x00A7; 4303 on the basis of fewer than all the components of a performance standard for a critical performance element, the agency must present substantial evidence that the employee's performance warranted an unacceptable rating on the performance element as a whole. <span class="Italic">Id</span>. This evidence should demonstrate that the appellant knew or should have known the significance of the component at issue, in addition to demonstrating that the appellant's deficiencies are significant enough to justify the action taken. <span class="Italic">Id</span>. at 629.</p>
+<p class="Block-Quote1">Here, as the administrative judge recognized, the appellant received a notice specifically detailing her deficient performance under component 5Sb. Moreover, the appellant received continuous counseling and training to correct this very deficiency. Furthermore, the correct formatting of documents is clearly integral to a Secretary (Typist)'s contribution to the agency's mission. <span class="Italic">See</span> <span class="Italic">Adkins v. Department of Housing and Urban Development</span>, 781 F.2d 891, 895-96 (Fed. Cir. 1986) (employee's deficiency as to typing output warranted unacceptable rating as to the critical element as a whole, since internal and external correspondence are critical factors for the effective functioning of an agency). We therefore find that the appellant knew or should have known of the significance of the component at issue and that the appellant's deficiency was significant enough to justify the action taken....</p>
+<p class="Body-Text"><span class="Italic">See</span> <span class="Italic">Leonard v. DOD</span>, 82 MSPR 597, 599 &#x00B6; 6 (1999) (reiterating the <span class="Italic">Mendez</span> approach to PIP performance on subelement of performance standard).</p>
+<p class="Body-Text">Under <span class="Italic">Hussey v. USDA</span>, DA-0432-13-0237-I-1 (NP 8/7/2014), notice of the significance of components of critical elements can be indirect:</p>
+<p class="Block-Quote1">Where, as here, an appellant's performance was unacceptable on one or more, but not all, components of a critical element, the agency must show by substantial evidence that the appellant's performance warranted an unacceptable rating on the element as a whole. <span class="Italic">Adkins v. Department of Housing &#x0026; Urban Development</span>, 781 F.2d 891, 895 (Fed. Cir. 1986). An important function of performance standards is to ensure that employees understand both their agencies' expectations of them and the consequences of their failure to meet these expectations. <span class="Italic">Shuman v. Department of the Treasury</span>, 23 M.S.P.R. 620, 628 (1984). The evidence presented by the agency thus should demonstrate that the appellant knew or should have known the significance of the component or components at issue, in addition to demonstrating that the appellant's deficiencies are significant enough to justify the action the agency has taken. <span class="Italic">Id</span>. at 628-29. The evidence may include a showing of the importance of the component or components in relation to the duties and responsibilities with which the critical element as a whole is concerned. <span class="Italic">Id</span>. at 629.</p>
+<p class="Block-Quote1">Here, we find the appellant was aware of the significance of the components at issue. The agency's PIP letter informed the appellant of the specific deficiencies in each critical element, using the language from the performance standard. The agency's PIP letter only references components of the performance standard where the agency found deficiencies. The PIP letter notified the appellant that his performance was unsatisfactory in the three elements. The agency also notified the appellant of the significance of these components when it informed him that if he did not successfully complete the PIP he would be demoted or removed from his position. Hence, we find that the appellant was sufficiently notified that his continued unsatisfactory performance in these components of the performance standard would result in an unacceptable rating for the critical element. <span class="Italic">See, e.g., Smallwood v. Department of the Navy</span>, 52 M.S.P.R. 678, 683-84 (1992) (finding that the agency properly notified the appellant at the beginning of the PIP that unacceptable performance for one component of the performance rating would warrant a rating of unacceptable for the element as a whole and that he could be removed if his performance was not at a minimally acceptable level).</p>
+<p class="Body-Text">Notice requirements for subelements were indirectly described, <span class="Italic">Duggan v. DHHS</span>, 33 MSPR 568, 571-72 (1987):</p>
+<p class="Block-Quote1">The Board has previously held that, where an agency has removed an employee for unacceptable performance on fewer than all of the performance standards of a critical element, the agency must prove that the employee's performance warranted an unacceptable rating on the critical element as a whole. <span class="Italic">See</span> <span class="Italic">Shuman</span>, at 628.</p>
+<p class="Block-Quote1">With respect to critical element three, the administrative judge found that the agency witness testified that some of the components for this element were more important than others, without identifying the more important elements, and admitted that appellant was not advised about the differences in the rating value to be given to each subelement....</p>
+<p class="Body-Text"><span class="Italic">Lee v. EPA</span>, 115 MSPR 533, 553 &#x00B6; 37, 2010 MSPB 240 (2010), noted of multiple performance objectives specified in a PIP:</p>
+<p class="Block-Quote1">...On petition for review, the appellant observes that unsatisfactory performance on two out of six objectives is a significantly smaller numerical proportion. However, an agency need not show that an employee's performance was unacceptable on a majority of subelements in order to prove unacceptable performance on the critical element as a whole. <span class="Italic">See, e.g.</span>, <span class="Italic">Rogers v. Department of Defense Dependents Schools, Germany Region</span>, 814 F.2d 1549, 1554 (Fed. Cir. 1987) (unsatisfactory performance on one of six components of one critical element and two of four components of another warranted an unacceptable rating on both critical elements). Here, the agency provided substantial evidence that the appellant was or should have been aware that the successful completion of tasks (1) and (2) was central to the very purpose of the regional Docket Coordinator position, i.e., to assist the agency with its statutory obligation to maintain and provide regular updates to the federal Docket. <span class="Italic">See</span> 42 U.S.C. &#x00A7; 9620(c).</p>
+<p class="Body-Text"><span class="Italic">Seed v. Dept. of Energy</span>, SF-0432-12-0736-I-1 (NP 8/15/2014), distinguished treatment of components of a critical element from specifications supporting a charge under Chapter 75 (adverse action):</p>
+<p class="Block-Quote1">The agency seems to be applying a 5 U.S.C. chapter 75 analysis, although it brought its action under chapter 43. It is true that, under chapter 75, where more than one event or factual specification supports a single charge, proof of one or more, but not all, of the supporting specifications is sufficient to sustain the charge. <span class="Italic">Burroughs v. Department of the Army</span>, 918 F.2d 170, 172 (Fed. Cir. 1990). Under chapter 43, however, where an employee's performance is unacceptable on one or more, but not all, components of a Critical Element, the agency must show by substantial evidence that his performance warranted an unacceptable rating on the element as a whole. <span class="Italic">Lee v. Environmental Protection Agency</span>, 115 M.S.P.R. 533, &#x00B6; 36 (2010). Applying the agency's logic, if the appellant did not properly complete even one task assigned during the PIP, regardless of the task's relation to her position and the Critical Elements as a whole, she would fail an Improvement and, therefore, a Critical Element, thus justifying her removal. We reject this argument. It is not sufficient for the agency to assert that the appellant failed a Critical Element because of her failure to properly complete a single task, without providing any explanation of how the task itself, not simply the corresponding Improvement, warranted failure of the Critical Element as a whole if not done properly.</p>
+<p class="Body-Text">Analysis of the relation of subelements to the principal performance standard is not simply an issue of law to be decided through analysis of the text of the standard. Testimony is appropriate, <span class="Italic">Sanchez v. Dept. of Air Force</span>, 27 MSPR 552, 555-56 (1985):</p>
+<p class="Block-Quote1">...The agency...stated that Ms. Lepard would testify on both the issue of OPM approval and the issue of "how non-performance of subelements of a critical job element results in non-accomplishment of the entire job element." The presiding official disallowed Ms. Lepard's testimony on the issue of the relationship of appellant's subelements to the critical elements at issue, finding that this issue was a legal issue and that Ms. Lepard's testimony concerning it would be irrelevant. Although the agency did not specifically object to this finding, the agency withdrew its request for a hearing, noting that as a result of the presiding official's ruling, Ms. Lepard's testimony was limited to the issue of OPM approval. The agency then elected to submit this testimony in affidavit form.</p>
+<p class="Block-Quote1">Based upon the standards enumerated by the Board in <span class="Italic">Shuman</span>, <span class="Italic">supra</span>, we find that the issue of whether an appellant's unacceptable performance on fewer than all components of a critical element warrants an unacceptable rating on the element as a whole is a mixed issue of law and fact, rather than a purely legal issue. In <span class="Italic">Shuman</span>, <span class="Italic">supra</span>, we held that although the manner of proof on this issue might vary from case to case, the agency's proof should demonstrate that the appellant knew or should have known the significance of the subelements at issue and should demonstrate that the deficient performance on the subelements warranted an unacceptable rating on the critical elements as a whole. <span class="Italic">Shuman</span>, <span class="Italic">supra,</span> at 628-29. Based on the standards enunciated in <span class="Italic">Shuman</span>, we can find no basis for disallowing the proof that the agency proffered on this issue. In light of the fact that the agency was not afforded an opportunity to submit proof regarding this issue, we hereby VACATE the presiding official's finding that the agency did not carry its burden <span id="Page_2912"></span>regarding this issue under <span class="Italic">Shuman</span>, <span class="Italic">supra.</span> This appeal is REMANDED to the Denver Regional Office for the limited purpose of allowing the agency to submit evidence regarding whether appellant's unacceptable performance on fewer than all components of his performance standard warranted an unacceptable rating on any one critical element as a whole, and to allow the appellant to submit rebuttal evidence on this issue.</p>
+<p class="Body-Text">The Board does not always attempt an extensive analysis of the various components of a single performance standard--particularly if the employee was told that one subelement would be the critical point of evaluation of performance. <span class="Italic">See</span> <span class="Italic">Mabrouk v. Dept. of Army</span>, 40 MSPR 149, 153 (1989). However, for an agency to take action against an individual based upon a component of a standard, the employee must be on fair notice in his PIP as to what component of the standard is implicated in unacceptable performance. "[B]efore it can be determined whether the applicable performance standard is valid, it must be determined what the applicable performance standard is." <span class="Italic">Harvey v. Dept. of Navy</span>, 65 MSPR 120, 125 (1994); <span class="Italic">cf.</span> <span class="Italic">Gonzalez v. Dept. of Army</span>, 40 MSPR 241, 245 n.1 (1989) (subelement for a military recruiter of contacting potential applicants and production of "contracts" was essential to the successful performance of the critical element of "Recruitment and Enlistment").</p>
+</section>
+</body>
+</htmltext>
+</html>
