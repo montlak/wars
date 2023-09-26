@@ -1,0 +1,737 @@
+<html>
+<cdb>broida mspb</cdb>
+<doctype>Chapter 09: Performance Cases</doctype>
+<doctitle>Chapter 09: Performance Cases, Subchapter 01: Unacceptable Performance Cases, Section D: Performance Standard Criteria, Subsection 11: Numeric Standard</doctitle>
+<htmltext><head>
+<style>
+body {
+-epub-hyphens:auto;
+-webkit-hyphens:auto;
+margin:1em;
+}
+a{
+text-decoration:none;
+}
+img{
+max-width:100%;
+vertical-align:middle;
+}
+h1.Ch-Head {
+font-family:"Arial", sans-serif;
+font-size:2.34em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+h1.Ch-Subhead {
+font-family:"Arial", sans-serif;
+font-size:2.17em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+border-bottom-style:double;
+padding-bottom:.2em;
+}
+p.Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Text-R {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-Rh {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-R2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+p.Body-Textl {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:-0.3em;
+margin-top:0.5em;
+text-align:left;
+text-indent:0em;
+}
+p.Body-Textc {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+h2.h2 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+margin-left:3em;
+text-align:left;
+text-indent:0em;
+}
+span.space{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-3em;
+}
+span.spacet{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+h3.h3 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:6em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h4.h4 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:8em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h5.h5 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:10em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h6.h6 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:12em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+div.box1{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2.5em;
+border-style:double;
+padding:0em;
+}
+div.box1a{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2em;
+border-style:double;
+padding:0em;
+}
+div.box1b{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 1.8em;
+border-style:double;
+padding:0em;
+}
+h1.csh {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+background-color:#E7E7E8;
+text-align:center;
+}
+div.box2{
+font-family:"Arial", sans-serif;
+margin:0.6em 1.5em 0em 1.5em;
+border:3px solid;
+padding:0em 0.3em 0em 0.3em;
+}
+h1.csh1 {
+font-family:"Arial", sans-serif;
+font-size:0.87em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+text-align:center;
+}
+ul.bull1{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.8em 0.3em 0.8em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull1p{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull12{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0.2em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.list{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 1.8em;
+padding:0em;
+text-align:left;
+}
+ul.listl{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 0.5em;
+padding:0em;
+text-align:left;
+}
+ul.listn{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+font-size:0.83em;
+margin:0em 0em 0.8em 0.5em;
+text-align:left;
+}
+li.listr2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 0em .7em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 2em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 4em;
+text-align:left;
+text-indent:-2.2em;
+padding:0.2em 0em 0em 0em;
+}
+li.listr2n{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.8em 0.1em .0em 0.2em;
+text-indent:-2.1em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2cn{
+padding-right:1em;
+}
+span.nl2cnb{
+padding-right:1.5em;
+}
+li.listr2b{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 0em -0.8em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2c{
+padding-right:2em;
+}
+p.listr3{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 0em .5em 0em;
+text-align:left;
+}
+li.nl2ca {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 0.2em;
+text-align:left;
+text-indent:0em;
+}
+li.nl2c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 2em;
+text-align:left;
+text-indent:0em;
+}
+span.nl2ca {
+font-family:"Arial", sans-serif;
+float:left;
+margin:0em 0em 0em -2em;
+}
+blockquote{
+font-family:"Arial", sans-serif;
+margin:0.5em 0em 0.5em 1.8em;
+}
+p.Block-Quote1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 3em;
+text-align:justify;
+}
+p.Block-Quote1s{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 1em 1.3em;
+text-align:justify;
+}
+p.Block-Quote2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 5em;
+text-align:justify;
+}
+p.Block-Quote3{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 7em;
+text-align:justify;
+}
+p.Block-Quote4{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 9em;
+text-align:justify;
+}
+p.Block-Quote5{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 11em;
+text-align:justify;
+}
+p.Block-Quote6{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 13em;
+text-align:justify;
+}
+p.b2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 4.5em;
+text-align:left;
+}
+p.Body-Text-1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:.5em;
+margin-top:.5em;
+text-align:left;
+text-indent:0em;
+}
+p.box-Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin:0.5em 0 0.5em 0;
+text-align:left;
+text-indent:0em;
+}
+.Italic{
+font-family:"Arial", sans-serif;
+font-style:italic;
+}
+p.C-P-box-body-text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C-P-box-body-text2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.2em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+padding:0.3em;
+text-indent:0em;
+}
+p.C-P-box-body-text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C1-P-box-Body-Text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em 0.2em 0.2em 0.7em;
+text-align:left;
+text-indent:0em;
+}
+p.td2b{
+font-family:"Arial", sans-serif;
+font-size:0.92em;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+p.td2b1{
+font-family:"Arial", sans-serif;
+font-size:1.2em !important;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+span.white{
+font-family:"Arial", sans-serif;
+color:white;
+}
+.img{
+font-family:"Arial", sans-serif;
+margin:0em 0.4em 0em 1em;
+text-indent:0em;
+}
+td.practice-para, p.practice-para{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+text-indent:0em;
+}
+td.practice-parats{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+padding:0.5em 0em 0em 1.5em;
+text-indent:0em;
+}
+td.practice-paratd{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+text-indent:0em;
+}
+td.practice-paratd1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+border-right:2px solid;
+text-indent:0em;
+}
+ p.practice-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+ p.practice-para2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+div.black{
+font-family:"Arial", sans-serif;
+background-color:#000000;
+color:#FFFFFF;
+padding:.2em 1em .2em 1em;
+}
+.practice-para-h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 0em 0em 0.8em;
+text-align:center;
+text-indent:0em;
+}
+.hang{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 6em;
+text-align:left;
+}
+.list-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 2.7em;
+text-align:left;
+}
+.list-para2{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 3.7em;
+text-align:left;
+}
+small.ch{
+font-family:"Arial", sans-serif;
+font-size:0.75em;
+}
+small.cs{
+font-family:"Arial", sans-serif;
+font-size:0.65em;
+}
+span.pad{
+padding-right:2em;
+}
+table.table{
+border-collapse:collapse;
+max-width:100%;
+margin:0em 1.5em 0em 1.5em;
+}
+table.table1{
+border-collapse:collapse;
+max-width:100%;
+margin:-1em 1em 0em 1em;
+margin-left:auto;
+margin-right:auto;
+}
+div.practice{
+font-family:"Arial", sans-serif;
+font-size:1.25em;
+margin:0em .5em 0 0;
+text-align:center;
+padding:.5em;
+text-indent:0em;
+background-color:#E7E7E8;
+}
+p.list {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.list2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:6.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list2{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.Body-Address {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:0.25em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Address-h {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:1em;
+text-align:justify;
+text-indent:0em;
+}
+table.table
+{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+margin-bottom: 1.5em;
+margin-top:1.5em;
+text-align:left;
+text-indent:0em;
+font-size:0.95em;
+border-collapse:collapse;
+width:100%;
+border:1px solid #000;
+}
+table.table tbody td.td{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+font-size:1em;
+font-weight:normal;
+margin-bottom:0em;
+margin-top:0em;
+padding:0.5em;
+text-indent:0em;
+vertical-align:top;
+color:#000;
+text-align:left;
+font-weight:normal;
+border:1px solid #000;
+}
+table.table tbody td.td p.list {
+font-family:"Arial", sans-serif;
+font-size:1em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+table.table tbody td.td span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+span.small
+{
+font-size:0.75em;
+}
+span.blue
+{
+color:#0000FF;
+}
+span.Italic
+{
+font-family:"Arial", sans-serif;font-style:italic;}
+span.BoldItalic
+{
+font-family:"Arial", sans-serif;font-style:italic;font-weight:bold;}
+span.Bold
+{font-family:"Arial", sans-serif;font-weight:bold;}
+</style>
+</head>
+<body>
+<section>
+<h4 class="h4" id="sec9-44"><span class="space">11.</span> Numeric Standard</h4>
+<p class="Body-Text">If an agency uses numeric standards, it must be prepared to demonstrate the reasonableness of the standard. Standards that equate to exceptionally low margins of error, e.g., a required 99.91% accuracy rate, will not likely survive a challenge to their reasonableness. <span class="Italic">See</span> <span class="Italic">Russi v. Dept. of Army</span>, 40 MSPR 585, 590 (1989) (0.426% allowable error rate was unreasonable for a medical technician making thousands of noncritical data entries); <span class="Italic">Lewis v. Dept. of Army</span>, 38 MSPR 91, 95 (1988) (standards were invalid because they required a near perfect performance to receive a satisfactory rating); <span class="Italic">Blain v. VA</span>, 36 MSPR 322, 325 (1988) (file clerk: a 99.1% accuracy rate was unreasonable, citing <span class="Italic">Walker v. Dept. of Treasury</span>, 28 MSPR 227, 229, 231 (1985)).</p>
+<p class="Body-Text">In response to an objection by an appellant to a quantity standard for performance, the agency bore the burden of showing both that the numerical standard for a GS-13 Securities Compliance Examiner was realistic and reasonably attainable, and that the agency did not abuse its discretion in establishing the standard. To justify a national average used to create a standard, an agency must show that the work assigned to the appellant was similar in complexity to that considered in the national average. <span class="Italic">Rocheleau v. SEC</span>, 29 MSPR 193, 195-96 (1985). Appellant Rocheleau's performance standard as to quantity was not sustained as a basis for removal, but removal was supported under the qualitative component of the standard:</p>
+<p class="Block-Quote1">...As the presiding official noted, when such an abuse of discretion is charged, the agency bears the burden of proving that it satisfied the statutory requirements of 5 USC &#x00A7; 4302(b)(1) in establishing that standard. <span class="Italic">See Callaway v. Department of the Army,</span> 23 MSPR 592 at n.6 (1984). Section 4302(b)(1) requires that performance standards be designed, to the maximum extent possible, to "permit the accurate evaluation of job performance on the basis of objective criteria." Thus, in response to appellant's objection to the quantity standard, the agency's burden was to show that the standard requiring the completion of 30 examinations per year was realistic and reasonably attainable, and that the agency did not abuse its discretion in establishing the standard. <span class="Italic">Siegelman v. Department of Housing and Urban Development,</span> 13 MSPB 27, 14 MSPR 326 (1983).</p>
+<p class="Block-Quote1">The agency contends that a numerical quota is, by its nature, highly objective, that the work of other examiners, both in the office and nationwide, demonstrates that 30 examinations per year is a reasonable standard for an employee at the GS-13 level, and that a rational basis existed for so establishing the standard--to insure that the office could meet its numerical goal and retain its ability to protect investors. Accordingly, the agency contends that it did not abuse its discretion in establishing the standard. We disagree.</p>
+<p class="Block-Quote1">As the presiding official noted, no one in the Boston Regional Office at any grade had ever conducted 30 examinations in one year. Moreover, no other examiners nationwide had numerical quotas in their performance standards. Although agency officials admitted that they did not rely on any national production statistics in arriving at the 30 examination quota, the agency did attempt to justify the quota by showing that nationwide, during 1984, other examiners conducted an average of 40 examinations. However, in order to rely on the national average for purposes of comparing it to the quota applied to appellant, the agency would be required to show either that "...approximately the same amount of time was required..." to do each examination or that "...the complexities presented by the mix of [examinations] assigned..." to appellant "...mirrored the complexities of those included in the national average." <span class="Italic">See Social Security Administration, Department of Health and Human Services v. Goodman,</span> 19 MSPR 321 (1984). This the agency failed to do. Although Mr. Flynn testified that the amount of time required to do an examination varies from one day to six weeks, depending on the size of the firm and the amount of money it manages, there was no showing that the examinations assigned to appellant were similar in complexity to those considered in the national average. We agree with the presiding official that the testimony of appellant's supervisors as to the reasonableness of the standard is insufficient, in view of the above contrary evidence, to show that the standard meets the statutory requirement of objectivity. We find, therefore, that the agency abused its discretion in establishing the standard. <span class="Italic">Callaway, supra.</span></p>
+<p class="Body-Text">A numerical standard should relate to something measurable. A standard requiring an employee to perform various tasks correctly 90% of the time must provide a reference so that the appellant's work can be counted and its accomplishment measured, <span class="Italic">Ryerson v. Dept. of Army</span>, 35 MSPR 123, 127-28 (1987):</p>
+<p class="Block-Quote1">...While an agency is not required to provide an accounting of every item of work in order to prove unacceptable performance with respect to a critical element with a percent requirement, the agency must, at a minimum, establish some methodology for selecting the examples of alleged unacceptable performance so that a reasonable person might conclude that the appellant's performance fell below the critical element's percent standard. <span class="Italic">See</span> <span class="Italic">Player v. Veterans Administration</span>, 32 MSPR 448, 451-52 (1987).</p>
+<p class="Block-Quote1">Our review of the evidence...indicates that the agency has not established that the cited examples of the appellant's unacceptable performance were selected in any objective, systematic method. The agency did not establish a relationship between the cited examples of unacceptable ECLs and the total number of ECLs that the appellant submitted. Nor did the agency establish a relationship between the appellant's failure to submit documentation for eight programs and the total number of program documentation required during the performance period....&#8197;The appellant's supervisor testified that the appellant failed to implement her user support assignments in a correct and timely manner 90% of the time and that, from January 17, 1985, to January 16, 1986, she submitted incomplete ECLs at least twice a week....&#8197;His testimony does not establish, however, the total number of ECLs or programming documentation submitted by the appellant....</p>
+<p class="Block-Quote1">Consequently, we find that the agency has not proven by substantial evidence that the appellant's inadequate completion of fifteen ECLs and failure to submit program documentation for eight programs constituted unacceptable performance under critical element four....</p>
+<p class="Body-Text">Yet the Board approved numerical standards that were not measured against a given output of work, e.g., the work produced in a week or a month. At issue in <span class="Italic">Van Patten-Steiger v. DHHS</span>, 29 MSPR 324, 327 (1985), was the agency's application of standards for GS-10 Claims Representatives calling for 80-89.9% accuracy at the "fully satisfactory" level and 70-79.9% accuracy at the "minimally satisfactory" level.</p>
+<p class="Body-Text"><span class="Italic">Thompson v. Dept. of Navy</span>, 89 MSPR 188, 191-94 &#x00B6;&#x00B6; 6-14 (2001), evaluated the WIGI denial and removal of a GS-12 Environmental Engineer based on a permissible error rate, interpreted by the Board to include errors that "concerned relatively significant errors having at least potentially serious effects on the value of the appellant's work":</p>
+<p class="Block-Quote1">In this case, the appellant was advised that he would not receive a rating of "acceptable" on his "organizational support and communication" element if there were more than three instances during the PIP in which he failed to do any of the following: (1) follow administrative channels, regulations, policies, or procedures; (2) comply with directives and instructions while demonstrating knowledge of the organization's goals and priorities; (3) communicate effectively, both orally and in writing, with the appellant's section leader, other staff members, and the Fleet Environmental Officer (FEO); (4) properly coordinate work requirements; and (5) keep his section leader, customers, and the FEO informed of work-related issues, their development, and their status. He also was advised that he would not receive a rating of "acceptable" on his "execution of duties" element if there were more than three instances in which he "fail[ed] to produce a product or to provide a service because the quality, timeliness, or responsiveness [was] unacceptable, as determined by the supervisor."</p>
+<p class="Block-Quote1">The finding in the initial decision that these restrictions required "near perfection," and that they therefore were unreasonable, was based largely on the agency's assertion, in response to interrogatory questions, that there "would be opportunities every workday to commit errors under" each of the two critical elements at issue in this case. After referring to this evidence, the administrative judge noted the appellant's argument that the existence of two such opportunities each work day, along with the 1-error-a-month limit, would require the appellant to have an accuracy or success rate of 97.2% on each critical element.</p>
+<p class="Block-Quote1">As the administrative judge indicated in her initial decision, the Board has overturned actions that were based on standards requiring inordinately high accuracy rates. ID at 7 (citing <span class="Italic">Russi v. Department of the Army</span>, 40 M.S.P.R. 585 (1989); <span class="Italic">Lewis v. Department of the Army</span>, 38 M.S.P.R. 91 (1988); <span class="Italic">Blain v. Veterans Administration</span>, 36 M.S.P.R. 322 (1988); and <span class="Italic">Walker</span>, 28 M.S.P.R. 227). We see nothing in those cases, however, that indicates that the number of opportunities an employee has to make errors should be the basis for determining whether a numerical limit on errors is reasonable. In fact, the number of opportunities an engineer such as the appellant would have to make an error would appear to be virtually unlimited, and certainly impossible to calculate with any degree of accuracy.</p>
+<p class="Block-Quote1">Moreover, the cases on which the administrative judge relied are <span id="Page_2909"></span>readily distinguishable from the present case. In each of those cases, the employee was required to complete the overwhelming majority of assigned tasks in a manner free of even minor errors. <span class="Italic">See</span> <span class="Italic">Russi,</span> 40 M.S.P.R. at 587, 589-90; <span class="Italic">Lewis,</span> 38 M.S.P.R. at 93-94; <span class="Italic">Blain</span>, 36 M.S.P.R. at 324-26; <span class="Italic">Walker,</span> 28 M.S.P.R. at 228-30. The error limits established in this case, by contrast, concerned relatively significant errors having at least potentially serious effects on the value of the appellant's work. Moreover, the alleged errors that formed the bases for the "unacceptable" ratings the appellant received following his PIP concern actions or inactions that, if proven, would appear to reflect in a significantly adverse manner on the appellant's performance.</p>
+<p class="Block-Quote1">Finally, we note that the Board indicated in one of the cases on which the administrative judge relied that its finding that the standard at issue there was unreasonable was based in part on the agency's failure to show that any employee situated similarly to the appellant in that case was able to meet the standard. <span class="Italic">Russi</span>, 40 M.S.P.R. at 590-91. In the present case, the FEO, who established the numerical error limits described above and who rated the appellant's performance following the PIP, testified that the "typical employee" working under standards such as those applied to the appellant made "probably three to four errors in a given year," that "[o]ne error a month [was] truly...excessive," and that his employees typically did not commit an error a month. Under these circumstances, we find that the agency has demonstrated by substantial evidence that the error limits set in the appellant's PIP notice are not unreasonable. <span class="Italic">See</span> <span class="Italic">Russi,</span> 40 M.S.P.R. at 590-91.</p>
+<p class="Block-Quote1">We have noted above that the administrative judge also found that the agency failed to identify in advance of the PIP the matters that would be counted as errors. In doing so, she relied on the FEO's testimony that he did not recall why he did not count some aspects of the appellant's PIP performance as errors, and that he believed in retrospect that he should have counted them. She also found that that official "arbitrarily chose some [matters] to be errors and others not," and that "any reasonable employee, looking at the performance standards[,] would not be able to make a determination as to what would be a countable error." <span class="Italic">Id</span>.</p>
+<p class="Block-Quote1">We do not concur in these findings. As indicated above, the agency listed, in attachments to the PIP notice, five categories of goals the appellant was to achieve with respect to the "organizational support and communication" element; it advised him that any failure to meet those goals would be counted as an error; and it described the results he was to prevent in order to avoid having an error counted with respect to the "execution of duties" element. While it did not identify each action or inaction that could be counted as an error, the Board has recognized that not all positions are "susceptible to...mechanical, judgment-free rating...." <span class="Italic">See Siegelman</span>, 13 MSPB 27, 14 M.S.P.R. at 330-31. The application of performance standards to a position such as the appellant's--i.e., a professional position involving work achievements and deficits that are not readily quantifiable--will inevitably require the exercise of a significant degree of judgment. Moreover, we see no significance in the agency's acknowledged failure to count as errors all the alleged deficiencies during the PIP. That failure could reflect a belief or assumption that the uncounted matters were less significant than those counted as errors, a belief or assumption that those counted as errors were sufficient by themselves to support removal, or both. Finally, we see no indication that the appellant sought guidance before or during the PIP regarding the matters that could be counted as errors, and we note that he was expressly advised in the PIP notice...that the FEO and the appellant's section leader were available to answer any "performance questions" the appellant might have.</p>
+<p class="Block-Quote1">The administrative judge found further, as noted above, that the appellant's standards did not indicate whether performance considered marginally acceptable under the agency's previous, 5-level performance appraisal system would be considered acceptable or unacceptable under the new standards. This finding was based on the uncertainty the FEO expressed when asked during his deposition how such performance would be regarded after the change to the 2-level system, and it appears to have been a factor in the administrative judge's conclusion that the agency failed to communicate adequately the standards against which the appellant's performance was to be measured.</p>
+<p class="Block-Quote1">We are not persuaded that the FEO's uncertainty regarding this matter, or the new standards' failure to address the rating of performance previously considered marginally acceptable, has any effect on the validity of the appellant's standards. Nothing in the record indicates that the agency regarded the appellant's performance during the PIP as marginally acceptable, and the agency's evaluation of that performance--an evaluation that reflected a belief that the appellant had committed more than three times the number of allowable errors with respect to each element--indicates that the agency regarded the appellant's performance as well within the "unacceptable" category.</p>
+<p class="Body-Text">A numeric standard should be known to the employee in advance of a performance improvement period. In <span class="Italic">Clarke v. DHHS</span>, 37 MSPR 63, 66 n.4 (1988), the agency failed to give the appellant sufficient advance notice of expectations when the method the agency used to determine whether the standard was met involved comparison of the appellant's error rate with those of other employees during the performance period. <span class="Italic">Clarke</span> was remanded to permit the agency to show that the appellant was placed on specific notice of her standards and to show how she was to meet them.</p>
+<p class="Body-Text">A numeric standard must take into account the conditions of work. <span class="Italic">Williams v. Dept. of Treasury</span>, 35 MSPR 432, 435-36 (1987), involved a GS-4 Data Transcriber whose job was to use agency machinery to encode and verify data from source documents. The performance standard required her to key code and verify at the rate of 5,700 hourly keystrokes. The rate was calculated by adding the number of keystrokes the appellant used to enter data to the number of keystrokes she used verify the data, adjusting the total based on the number of errors made and corrected, and by dividing the adjusted total by the number of hours worked. The problem, argued the appellant, was that the standard measured the keystrokes in terms of the hours she worked rather than the hours she worked on the machine, and failed to allow for variables, e.g., availability of machine work and the assignment of nonmachine duties. Agreeing that the standard was improperly formulated or applied, the Board reversed the removal:</p>
+<p class="Block-Quote1">[T]here is a fairly wide variation among employees, and from one period of time to another, in the proportion of working time spent on the computer...and...there is no evidence that employees are required to spend any particular proportion of time working on the computer. Under these circumstances, we find that the formula used in the agency's performance standard cannot measure productivity accurately.</p>
+<p class="Block-Quote1">In addition, the record shows that the agency had available to it information regarding the number of "machine hours" each employee spent during those periods....</p>
+<p class="Block-Quote1">Because the appellant's ability to meet the performance standard at issue could be affected by the nature of her assignments, and because the record shows that the agency was able to measure (and in fact did measure) the appellant's machine time, we find that the performance standard at issue did not meet the statutory requirement that, "to the extent feasible, [it] permit the accurate evaluation of job performance on the basis of objective criteria."...</p>
+<p class="Body-Text">A question may arise concerning the length of the reckoning period for measurement of errors. <span class="Italic">Brown v. VA</span>, 44 MSPR 635, 644-45 (1990), said of a numeric standard setting annual error limits:</p>
+<p class="Block-Quote1">[I]t is reasonable to establish a proportional numerical standard for the PIP, except in cases where seasonal or other variations in work load would make a proportional standard unfair and inaccurate. Although the employee must have notice of how his or her performance will be judged during the PIP, we believe that, where the workload is fairly constant, an employee subject to an annual numerical standard should reasonably anticipate evaluation of his or her PIP performance under a pro-rated standard....</p>
+<p class="Block-Quote1">However, the agency's action must be based on unacceptable performance as defined in the employee's performance plan. If the administrative judge determines that the appellant failed to demonstrate acceptable performance of the tissue staining element judged under a proportional standard, he must then determine whether the agency has shown that the appellant's performance during the year preceding the proposal notice was acceptable under the annual numerical standard for the element. Similarly, if the appellant demonstrated acceptable performance during her PIP but failed to sustain it thereafter, the appellant's overall performance during the year must also be evaluated under the annual standard....</p>
+<p class="Body-Text"><span class="Italic">See</span> <span class="Italic">Hazzard v. Dept. of Navy</span>, 24 MSPR 593, 598 n.5 (1984) ("The Board need not decide the validity of such a 'pro-rating' contention as to cases where performance standards set requirements to be met during specific time periods because the standards here fail to specify that they apply on an annual basis.").</p>
+<p class="Body-Text">In <span class="Italic">Saint Thomas v. Dept. of Navy</span> (Fed. Cir. 1989 NP No. 89-3260), the court suggested that in assessing unsatisfactory performance under a quantitative standard, the agency could add the errors during the improvement period together with the errors before the improvement period to determine if the error rate allowed under the standard for the appraisal year was exceeded.</p>
+</section>
+</body>
+</htmltext>
+</html>

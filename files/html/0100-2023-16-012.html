@@ -1,0 +1,732 @@
+<html>
+<cdb>broida mspb</cdb>
+<doctype>Chapter 09: Performance Cases</doctype>
+<doctitle>Chapter 09: Performance Cases, Subchapter 01: Unacceptable Performance Cases, Section D: Performance Standard Criteria</doctitle>
+<htmltext><head>
+<style>
+body {
+-epub-hyphens:auto;
+-webkit-hyphens:auto;
+margin:1em;
+}
+a{
+text-decoration:none;
+}
+img{
+max-width:100%;
+vertical-align:middle;
+}
+h1.Ch-Head {
+font-family:"Arial", sans-serif;
+font-size:2.34em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+h1.Ch-Subhead {
+font-family:"Arial", sans-serif;
+font-size:2.17em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+border-bottom-style:double;
+padding-bottom:.2em;
+}
+p.Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Text-R {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-Rh {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-R2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.1em;
+text-align:right;
+text-indent:0em;
+}
+p.Body-Text-c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+p.Body-Textl {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:-0.3em;
+margin-top:0.5em;
+text-align:left;
+text-indent:0em;
+}
+p.Body-Textc {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-top:0.5em;
+text-align:center;
+text-indent:0em;
+}
+h2.h2 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0em;
+margin-top:1em;
+margin-left:3em;
+text-align:left;
+text-indent:0em;
+}
+span.space{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-3em;
+}
+span.spacet{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+h3.h3 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:6em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h4.h4 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:8em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h5.h5 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:10em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+h6.h6 {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:bold;
+margin-left:12em;
+margin-bottom:.5em;
+margin-top:0.8em;
+text-align:left;
+text-indent:0em;
+}
+div.box1{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2.5em;
+border-style:double;
+padding:0em;
+}
+div.box1a{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 2em;
+border-style:double;
+padding:0em;
+}
+div.box1b{
+font-family:"Arial", sans-serif;
+margin:1em 2.5em 1em 1.8em;
+border-style:double;
+padding:0em;
+}
+h1.csh {
+font-family:"Arial", sans-serif;
+font-size:1em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+background-color:#E7E7E8;
+text-align:center;
+}
+div.box2{
+font-family:"Arial", sans-serif;
+margin:0.6em 1.5em 0em 1.5em;
+border:3px solid;
+padding:0em 0.3em 0em 0.3em;
+}
+h1.csh1 {
+font-family:"Arial", sans-serif;
+font-size:0.87em;
+font-weight:normal;
+margin:0em 0em .5em 0em;
+padding:0.2em 0em 0.2em 0em;
+font-weight:bold;
+text-align:center;
+}
+ul.bull1{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.8em 0.3em 0.8em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull1p{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.bull12{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0.5em 0.3em 0.2em 0.1em;
+padding:0em;
+text-align:left;
+}
+ul.list{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 1.8em;
+padding:0em;
+text-align:left;
+}
+ul.listl{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+margin:0em 0em 0.1em 0.5em;
+padding:0em;
+text-align:left;
+}
+ul.listn{
+font-family:"Arial", sans-serif;
+list-style-type:none;
+font-size:0.83em;
+margin:0em 0em 0.8em 0.5em;
+text-align:left;
+}
+li.listr2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 0em .7em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 2em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+li.listr2h1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.1em 0em 0em 4em;
+text-align:left;
+text-indent:-2.2em;
+padding:0.2em 0em 0em 0em;
+}
+li.listr2n{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.8em 0.1em .0em 0.2em;
+text-indent:-2.1em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2cn{
+padding-right:1em;
+}
+span.nl2cnb{
+padding-right:1.5em;
+}
+li.listr2b{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 0em -0.8em 0em;
+text-align:left;
+padding:0em 0em 0em 0em;
+}
+span.nl2c{
+padding-right:2em;
+}
+p.listr3{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 0em .5em 0em;
+text-align:left;
+}
+li.nl2ca {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 0.2em;
+text-align:left;
+text-indent:0em;
+}
+li.nl2c {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0.2em 0em 0em 0em;
+padding:0em 0em 0em 2em;
+text-align:left;
+text-indent:0em;
+}
+span.nl2ca {
+font-family:"Arial", sans-serif;
+float:left;
+margin:0em 0em 0em -2em;
+}
+blockquote{
+font-family:"Arial", sans-serif;
+margin:0.5em 0em 0.5em 1.8em;
+}
+p.Block-Quote1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 3em;
+text-align:justify;
+}
+p.Block-Quote1s{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 1em 1.3em;
+text-align:justify;
+}
+p.Block-Quote2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 5em;
+text-align:justify;
+}
+p.Block-Quote3{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 7em;
+text-align:justify;
+}
+p.Block-Quote4{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 9em;
+text-align:justify;
+}
+p.Block-Quote5{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 11em;
+text-align:justify;
+}
+p.Block-Quote6{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 13em;
+text-align:justify;
+}
+p.b2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 4.5em;
+text-align:left;
+}
+p.Body-Text-1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:.5em;
+margin-top:.5em;
+text-align:left;
+text-indent:0em;
+}
+p.box-Body-Text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin:0.5em 0 0.5em 0;
+text-align:left;
+text-indent:0em;
+}
+.Italic{
+font-family:"Arial", sans-serif;
+font-style:italic;
+}
+p.C-P-box-body-text {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C-P-box-body-text2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.2em;
+margin-left:0em;
+margin-right:0.2em;
+text-align:left;
+padding:0.3em;
+text-indent:0em;
+}
+p.C-P-box-body-text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em;
+text-align:left;
+text-indent:0em;
+}
+p.C1-P-box-Body-Text1 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin-bottom:0em;
+margin-top:0.5em;
+margin-left:0em;
+margin-right:0.2em;
+padding:0.2em 0.2em 0.2em 0.7em;
+text-align:left;
+text-indent:0em;
+}
+p.td2b{
+font-family:"Arial", sans-serif;
+font-size:0.92em;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+p.td2b1{
+font-family:"Arial", sans-serif;
+font-size:1.2em !important;
+margin:0em 1em 0em 1em;
+padding:0.3em 0em 0.3em 0em;
+text-align:center;
+text-indent:0em;
+vertical-align:top;
+background-color:#000000;
+ color:#FFFFFF;
+ white-space:nowrap;
+ border-radius:20px;
+}
+span.white{
+font-family:"Arial", sans-serif;
+color:white;
+}
+.img{
+font-family:"Arial", sans-serif;
+margin:0em 0.4em 0em 1em;
+text-indent:0em;
+}
+td.practice-para, p.practice-para{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+text-indent:0em;
+}
+td.practice-parats{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 1em 1em 1em;
+text-align:left;
+padding:0.5em 0em 0em 1.5em;
+text-indent:0em;
+}
+td.practice-paratd{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+text-indent:0em;
+}
+td.practice-paratd1{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:0em 1em 1em 0em;
+padding:1.5em 2em 0em 2em;
+text-align:center;
+border-right:2px solid;
+text-indent:0em;
+}
+ p.practice-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+ p.practice-para2{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.5em 1em 0em 1em;
+text-align:left;
+text-indent:0em;
+}
+div.black{
+font-family:"Arial", sans-serif;
+background-color:#000000;
+color:#FFFFFF;
+padding:.2em 1em .2em 1em;
+}
+.practice-para-h{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+margin:.2em 0em 0em 0.8em;
+text-align:center;
+text-indent:0em;
+}
+.hang{
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+text-indent:0em;
+margin:0.5em 0em 0em 6em;
+text-align:left;
+}
+.list-para1{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 2.7em;
+text-align:left;
+}
+.list-para2{
+font-family:"Arial", sans-serif;
+font-size:inherit;
+text-indent:0em;
+margin:0.5em 0em 0em 3.7em;
+text-align:left;
+}
+small.ch{
+font-family:"Arial", sans-serif;
+font-size:0.75em;
+}
+small.cs{
+font-family:"Arial", sans-serif;
+font-size:0.65em;
+}
+span.pad{
+padding-right:2em;
+}
+table.table{
+border-collapse:collapse;
+max-width:100%;
+margin:0em 1.5em 0em 1.5em;
+}
+table.table1{
+border-collapse:collapse;
+max-width:100%;
+margin:-1em 1em 0em 1em;
+margin-left:auto;
+margin-right:auto;
+}
+div.practice{
+font-family:"Arial", sans-serif;
+font-size:1.25em;
+margin:0em .5em 0 0;
+text-align:center;
+padding:.5em;
+text-indent:0em;
+background-color:#E7E7E8;
+}
+p.list {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.list2 {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:6.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+span.list2{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+p.Body-Address {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:0.25em;
+text-align:justify;
+text-indent:0em;
+}
+p.Body-Address-h {
+font-family:"Arial", sans-serif;
+font-size:0.83em;
+line-height:1.225;
+margin-bottom:0.25em;
+margin-left:4.3em;
+margin-top:1em;
+text-align:justify;
+text-indent:0em;
+}
+table.table
+{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+margin-bottom: 1.5em;
+margin-top:1.5em;
+text-align:left;
+text-indent:0em;
+font-size:0.95em;
+border-collapse:collapse;
+width:100%;
+border:1px solid #000;
+}
+table.table tbody td.td{
+font-family:"Arial", sans-serif;
+line-height:1.5;
+font-size:1em;
+font-weight:normal;
+margin-bottom:0em;
+margin-top:0em;
+padding:0.5em;
+text-indent:0em;
+vertical-align:top;
+color:#000;
+text-align:left;
+font-weight:normal;
+border:1px solid #000;
+}
+table.table tbody td.td p.list {
+font-family:"Arial", sans-serif;
+font-size:1em;
+line-height:1.225;
+margin-bottom:0.3em;
+margin-left:4.5em;
+margin-top:0.5em;
+text-align:justify;
+text-indent:0em;
+}
+table.table tbody td.td span.list{
+font-family:"Arial", sans-serif;
+float:left;
+margin-left:-2em;
+}
+span.small
+{
+font-size:0.75em;
+}
+span.blue
+{
+color:#0000FF;
+}
+span.Italic
+{
+font-family:"Arial", sans-serif;font-style:italic;}
+span.BoldItalic
+{
+font-family:"Arial", sans-serif;font-style:italic;font-weight:bold;}
+span.Bold
+{font-family:"Arial", sans-serif;font-weight:bold;}
+</style>
+</head>
+<body>
+<section>
+<h3 class="h3" id="sec9-12"><span class="space">D.</span> PERFORMANCE STANDARD CRITERIA</h3>
+<p class="Body-Text">5 USC 4302(c)(1) states that each performance appraisal system shall provide for the establishment of "performance standards which will, to the maximum extent feasible, permit the accurate evaluation of job performance on the basis of objective criteria." The regulatory definition of a performance standard is 5 CFR 430.203 (2022):</p>
+<p class="Block-Quote1"><span class="Italic">Performance standard</span> means the management-approved expression of the performance threshold(s), requirement(s), or expectation(s) that must be met to be appraised at a particular level of performance. A performance standard may include, but is not limited to, quality, quantity, timeliness, and manner of performance.</p>
+<p class="Body-Text">"An agency may not prove an employee's unacceptable performance of [a] critical element without regard to the written performance standard for that critical element." <span class="Italic">Purcell v. USDA</span>, 55 MSPR 305, 308 (1992). In principle, an agency is required to demonstrate that the standards it relies on in litigation before the Board are reasonable, realistic, and attainable. <span class="Italic">Johnson v. Dept. of Army</span>, 44 MSPR 464, 466-67 (1990). In Chapter 43 cases, the material issues include whether the agency proved that it took the action under valid standards. The Board must consider this issue, regardless of whether it is raised by the parties, before it can consider the charged performance deficiencies. <span class="Italic">Neal v. DLA</span>, 72 MSPR 158, 161 (1996) (AJ correctly considered adequacy of performance standards <span class="Italic">sua sponte</span>; if the standards were inadequate, there was no need to go further and analyze the appellant's performance under those standards). <span class="Italic">See</span> <span class="Italic">Henderson v. NASA</span>, 116 MSPR 96, 101 &#x00B6; 9, 2011 MSPB 12 (2011) (Board is obliged to consider the validity of an appellant's performance standards, regardless of whether it has been raised by the parties; it was immaterial that the appellant did not question the adequacy of the standards until the posthearing brief and that the AJ noted in the prehearing conference summary that the appellant was not contesting the adequacy of the standards); <span class="Italic">Mendez v. Dept. of Air Force</span>, 62 MSPR 579, 581-82 (1994) ("[T]he Board is obliged to consider this issue [valid performance standards] regardless of whether it has been raised by the parties."); <span class="Italic">Smith v. VA</span>, 59 MSPR 340, 347-48 (1993) ("The Board...has the authority to consider and decide the validity of the agency's <span id="Page_2884"></span>performance standards for an appellant's position even though the appellant did not raise the issue in an appeal to the Board or in a petition for review"; "[A]lthough the appellant did not challenge the validity of the performance standard, 'the validity issue was not "new" and should not have come as a surprise to the agency.'" (quoting <span class="Italic">Ortiz v. DOJ</span>, 46 MSPR 692, 695 (1991)); <span class="Italic">Burnett v. DHHS</span>, 51 MSPR 615, 617 (1991) ("The Board must consider this issue [valid performance standards] regardless of whether it has been raised by the parties, before it can consider the charged performance deficiencies).</p>
+<p class="Body-Text"><span class="Italic">Henderson v. NASA</span>, 116 MSPR 96, 101-03 &#x00B6;&#x00B6; 10-14, 2011 MSPB 12 (2011), rejected an agency's argument that an AJ erred by conducting an independent examination of the standards, despite the appellant's lack of a challenge to those standards in his prehearing submission:</p>
+<p class="Block-Quote1">...Because the Board is obliged to consider the validity of an appellant's performance standards, regardless of whether it has been raised by the parties, the administrative judge properly raised the validity of the appellant's performance standards and the agency cannot claim prejudice because the validity issue was not a "new" issue. <span class="Italic">See Neal</span>, 72 M.S.P.R. at 161; <span class="Italic">Smith</span>, 59 M.S.P.R. at 347-48.</p>
+<p class="Block-Quote1">The agency argues on petition for review that the administrative judge erred by citing <span class="Italic">Smith</span>, 59 M.S.P.R. 340, and <span class="Italic">Ortiz v. Department of Justice</span>, 46 M.S.P.R. 692 (1991), in the initial decision to support her reasoning that an agency cannot claim surprise when the validity of an employee's performance standards were not previously identified as an issue. The agency asserts that, while the performance standards were deemed facially invalid in <span class="Italic">Smith</span> and <span class="Italic">Ortiz</span>, in this case the administrative judge looked "well beyond the four corners of the performance standards" and relied on the record evidence to determine that the standards were invalid. Thus, the agency argues that even if the administrative judge did not commit error, <span class="Italic">per se</span>, by considering the validity issue, the administrative judge did commit prejudicial error when she looked to the record evidence before finding that the performance standards are invalid because she did not provide the agency with an opportunity to submit evidence or argument in support of this issue.</p>
+<p class="Block-Quote1">We find the agency's arguments unpersuasive. In <span class="Italic">Smith</span>, the Board found the performance standard at issue invalid as an absolute standard. <span class="Italic">Smith</span>, 59 M.S.P.R. at 348-49. In <span class="Italic">Ortiz</span>, the Board affirmed the administrative judge's finding that the performance standard was invalid as a "backward" standard because such standards "would have to be entirely rewritten, not just fleshed out and clarified during counseling." <span class="Italic">Ortiz</span>, 46 M.S.P.R. at 695. Thus, it was presumably not necessary in <span class="Italic">Smith</span> and <span class="Italic">Ortiz</span> to look beyond the four corners of the written performance standards because it would have been impossible for the agencies in those cases to cure an absolute or inherently backwards standard through subsequent oral or written communications. <span class="Italic">See Eibel</span>, 857 F.2d at 1443 (backwards standards have to be entirely rewritten, not just fleshed out and clarified during counseling, to inform an appellant of what he needs to do to achieve an acceptable rating); <span class="Italic">Jackson-Francis</span>, 103 M.S.P.R. 183, &#x00B6; 10 (same).</p>
+<p class="Block-Quote1">In contrast, the administrative judge in this case found the performance standards facially invalid because they consisted of a single written standard of satisfactory performance despite the fact that the agency has a five-tier performance appraisal plan. As explained herein, the Board has held that a single standard in a five-tier performance plan violates the statutory requirement of objectivity because it requires extrapolation more than one level above and below the written standard. <span class="Italic">See Donaldson v. Department of Labor</span>, 27 M.S.P.R. 293, 295-98 (1985). Although the appellant's performance standards were facially invalid, the administrative judge properly found that this deficiency could be cured through subsequent written and oral communications to the appellant. <span class="Italic">See Thompson v. Department of the Navy</span>, 89 M.S.P.R. 188, &#x00B6; 18 (2001). Thus, unlike the performance standards at issue in <span class="Italic">Smith</span> and <span class="Italic">Ortiz</span>, where clarification of the standards was not a possibility, the administrative judge properly looked to the written and hearing testimony to determine whether the agency sufficiently clarified the appellant's performance standards.</p>
+<p class="Block-Quote1">We further find that the agency has not shown on review that it was prejudiced by the administrative judge's failure to provide specific notice and opportunity below to develop the validity issue once the administrative judge looked beyond the "four corners" of the performance standards. Although the appellant's post-hearing brief and the initial decision properly informed the agency of its burden and the elements to prove the validity of the appellant's performance standards, the agency has not identified on review what evidence it would have submitted below to show that the appellant's performance standards are valid if the administrative judge had provided it with a specific opportunity to address this issue. <span class="Italic">Cf. Harris v. U.S. Postal Service</span>, 112 M.S.P.R. 186, &#x00B6; 9 (2009) (where an administrative judge failed to properly apprise an appellant prior to the initial decision of her burden and the elements to establish jurisdiction over her appeal, if the agency's pleadings contained the notice that was otherwise lacking, or if the initial decision put the appellant on notice of what she had to do to establish jurisdiction, then the appellant had the opportunity to meet her burden on review); <span class="Italic">Scott v. Department of Justice</span>, 105 M.S.P.R. 482, &#x00B6; 6 (2007) (same).</p>
+<p class="Block-Quote1">Thus, we find that the administrative judge did not commit prejudicial error by failing to apprise the parties prior to the initial decision that she would adjudicate the validity of the appellant's performance standards.</p>
+<p class="Body-Text"><span class="Italic">Stone v. DHHS</span>, 38 MSPR 634, 637-38 (1988) (on OPM reconsideration petition of 35 MSPR 603 (1987)), emphasized the Board's authority to determine on its own volition the propriety of performance standards:</p>
+<p class="Block-Quote1">OPM has petitioned for reconsideration contending that the Board erred in considering and deciding on the validity of the appellant's performance standards because the appellant did not raise the issue in her petition for review of the initial decision or in her appeal to the Board. OPM is mistaken in its interpretation of the Board's responsibility in its review of initial decisions.</p>
+<p class="Block-Quote1">The Board's role in granting a petition for review is to evaluate an agency's personnel action. <span class="Italic">See McIntire v. Consumer Product</span> <span class="Italic">Safety Commission,</span> 19 MSPR 437 (1984); <span class="Italic">Payne v. Department</span> <span class="Italic">of the Interior,</span> 26 MSPR 159 (1985). Even absent the filing of a petition for review, the Board, like other administrative agencies, has the inherent authority to reopen a case on its own motion. 5 USC &#x00A7; 7701(e); 5 CFR &#x00A7; 1201.117; <span class="Italic">Bookman v. United States,</span> 453 F.2d 1263, 1265, 197 Ct. Cl. 108 (1972); <span class="Italic">Rysavy v. Department</span> <span class="Italic">of Housing and Urban Development,</span> 28 MSPR 263, 264 (1985). The Board, therefore, has the authority to open a decision, when no petition for review has been filed, to address an issue without the urging of the parties. Clearly, it is within the scope of this authority for the Board to address an issue not raised by the parties (before the initial decision becomes final.) Accordingly, the Board did not err in considering and deciding on the validity of the appellant's performance standard.</p>
+<p class="Body-Text">The Board was emphatic in <span class="Italic">Wells</span>, 1 MSPR 208, 245 (1980), <span class="Italic">supra</span>, that agencies have flexibility in the development of standards and elements. Congress intended for the agencies to consider either the specific employee or the position in establishing performance standards. <span class="Italic">Wells</span> stated that "[g]iven this background, the Board cannot conclude that performance standards and critical elements must be based on position descriptions." OPM does not usually review specific standards and elements. If OPM does undertake a review of standards and finds a sampling of them deficient for a particular agency, the OPM conclusions do not demonstrate lack of objectivity of an appellant's standards unless the standards reviewed are either those of the appellant or standards similar to the appellant's. <span class="Italic">Renshaw v. Dept. of Army</span>, 28 MSPR 638, 640 (1985).</p>
+<p class="Body-Text">General guidance on performance standards was offered by the Board in a "flash study" on its website, <a href="https://www.mspb.gov/studies/publications/Tools_of_the_Trade_Considerations_When_Developing_Performance_Standards.HTM">https://www.mspb.gov/studies/publications/Tools_of_the_Trade_Considerations_When_Developing_Performance_Standards.HTM</a>:</p>
+<p class="Block-Quote1"><span class="Italic">Tools of the Trade: Considerations When Developing Performance Standards</span></p>
+<p class="Block-Quote1">Measuring performance is not an easy task--especially in today's Federal work environment. Federal employees no longer spend their days counting widgets or doing easily defined administrative tasks. They are performing more knowledge-based work that involves complicated, long-term projects that are not as easily described in terms of the standard quality, quantity, and timeliness measures used in the past. But with increasing telework, decreasing staffing levels, and functions more closely tied to public safety and security than ever, measuring performance is important.</p>
+<p class="Block-Quote1">A performance standard is a statement of what the employee is expected to do and at what level he or she is expected to perform. It should be reasonable and measurable. There are some basic steps you should take when developing performance standards. These are by no means inclusive but are being presented to give you a flavor for the decisions that need to be made.</p>
+<p class="Block-Quote1"><span class="Italic">Define the critical aspects of the job</span>. A thorough job analysis provides critical information for many aspects of the job, including setting performance standards. By collecting systematic data from subject matter experts, a job analysis identifies the key tasks of the job and can also identify some basic performance factors, such as how long it takes to do a task or the quality expected. Therefore, the job analysis can serve as the basis for the performance standards.</p>
+<p class="Block-Quote1"><span class="Italic">Set realistic performance targets</span>. The role of performance standards should be to challenge employees to produce without making the goal so difficult as to de-motivate them. If standards are too hard to achieve, they are de-motivating to everyone. If they are too easy to achieve, they will de-motivate your top performers and drive lower production throughout the office. There is rarely a "right" answer as to what a standard should be; but evaluating the performance outcomes of your top and middle performers may help you get a clearer picture of what it takes to perform the job well.</p>
+<p class="Block-Quote1"><span class="Italic">Make sure the performance standards are clear</span>. As stated in OPM guidance, performance standards should be "objective, measurable, realistic, and stated clearly in writing." Employees should understand what the standard <span id="Page_2885"></span>is, what is expected of them to reach the higher levels of performance, and how to gauge where they stand at any given point. Using numerical standards that require complicated formulas to calculate success or using vague language that can be interpreted in may different ways may only confuse and de-motivate employees.</p>
+<p class="Block-Quote1"><span class="Italic">Ensure standards are within the employee's control</span>. There are few things more frustrating for an employee than being told they are accountable for something they can't control. For instance, if an employee's timeliness measure includes the time it takes for management to review a product, the employee could be negatively impacted by an overworked manager. Take care to define standards that are within the employee's control.</p>
+<p class="Block-Quote1"><span class="Italic">Collaborate with the employee</span>. Obtaining feedback from employees on what they do and how they do it is a good way of obtaining their buy-in and support. It will also help ensure that employees are clear on the standards for which they are being rated. Employees can be involved in many ways--from providing input to what tasks are critical to defining the different levels of performance. They can be involved as a group or as individuals. Obtaining their input doesn't mean that they have the final say on what the standard or target is, but openness and transparency should foster more good will and trust between management and employees, making performance management easier and more effective.</p>
+<p class="Block-Quote1"><span class="Italic">Communicate with the employee</span>. The process doesn't end when the standards are in place. Constant communication throughout the performance cycle is critical to ensuring that employees are performing the tasks that are critical at the optimum performance level so that the organization can achieve its larger goals.</p>
+<p class="Block-Quote1">For more information on the performance management process, including regulatory requirements for performance standards, please see OPM's Workforce Pcerformance Resources page at <a href="http://www.opm.gov/perform/">http://www.opm.gov/perform/</a>. [Now found at <a href="https://www.opm.gov/policy-data-oversight/performance-management">https://www.opm.gov/policy-data-oversight/performance-management</a>.]</p>
+</section>
+</body>
+</htmltext>
+</html>
